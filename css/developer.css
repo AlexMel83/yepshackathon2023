@@ -1,0 +1,2686 @@
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --background-header: #FFF;
+    --techno-active: #FFFF54;
+    --techno: #767600;
+    --dev-team-card: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.container_width {
+    width: 100%;
+    background-color: var(--background);
+}
+
+/*----------LOGO----------*/
+.dev_logo_ALL {
+    width: 100%;
+    background-color: var(--background-header);
+}
+
+.dev_logo_ALL-cont {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--background);
+    width: 320px;
+}
+
+.dev_logo_container {
+    height: 137px;
+    display: flex;
+}
+
+.dev_logo_container-l {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_logo_blok {
+    width: 161px;
+    height: 90px;
+    background-color: var(--background);
+}
+
+.m_logo_IT {
+    width: 27px;
+    height: 27px;
+    margin-top: 11px;
+    margin-left: 9px;
+    margin-right: 8px;
+}
+
+.m_logo_IT img {
+    width: 100%;
+    height: 100%;
+}
+
+.dev_logo_zag-1 {
+    display: flex;
+    margin-top: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.dev_logo_zag-1 span {
+    width: 113px;
+    height: 48px;
+}
+
+.dev_logo_zag-2 {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.dev_anime-1 {
+    height: 47px;
+    width: 161px;
+    overflow: hidden;
+}
+
+.dev_anime-1 img {
+    width: 179px;
+    margin-left: -13px;
+    margin-top: -65px;
+}
+
+.dev_anime-2 {
+    height: 137px;
+    width: 159px;
+    overflow: hidden;
+}
+
+.dev_anime-2 img {
+    width: 170px;
+    margin-right: -11px;
+    margin-top: -16px;
+}
+
+/*----------IT----------*/
+.dev_IT_container {
+    display: block;
+    margin: 0 auto;
+    padding-top: 24px;
+    width: 320px;
+    height: 387px;
+}
+
+.dev_IT_zag {
+    display: block;
+    width: 301px;
+    height: 54px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text {
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.dev_IT_blok1,
+.dev_IT_blok2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_IT_container-text-1 {
+    display: flex;
+    flex-direction: row;
+    height: 63px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 1.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 0.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-1 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 0.5s;
+    animation-name: fadeInLeft;
+}
+
+.dev_IT_container-text-2 {
+    display: flex;
+    flex-direction: row;
+    height: 84px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 2.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 1.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-2 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 1.5s;
+    animation-name: fadeInLeft;
+}
+
+.dev_IT_container-text-3 {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 3.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 2.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-3 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 2.5s;
+    animation-name: fadeInLeft;
+}
+
+.dev_IT_container-text-4 {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 4.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 3.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-4 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 3.5s;
+    animation-name: fadeInLeft;
+}
+
+.dev_IT_container>.dev_IT-320>.dev_IT_container-text>.dev_IT_blok2>.en_dev_IT_container-text-4 {
+    margin-top: 34px;
+}
+
+.dev_IT-320 {
+    display: block;
+}
+
+.dev_IT-1024 {
+    display: none;
+}
+
+.dev_IT_cont-t-img {
+    width: 70px;
+    margin-top: 5px;
+    padding-left: 23px;
+    box-sizing: border-box;
+}
+
+.dev_IT_cont-t-img1 {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -22px;
+}
+
+.dev_IT_cont-t-text {
+    width: 226px;
+}
+
+.dev_IT_container-text-2 div:nth-child(2) {
+    width: 210px;
+}
+
+.dev_IT_container-text-4 div:nth-child(2) {
+    width: 177px;
+}
+
+/*----------TEAM----------*/
+.dev_Team_container {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 1074px;
+}
+
+.dev_Team_zag {
+    display: block;
+    width: 170px;
+    height: 27px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.dev_Team_zag1 {
+    display: block;
+    width: 290px;
+    height: 42px;
+    margin: 10px auto 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    font-style: italic;
+    text-align: center;
+}
+
+.dev_Team_zag1-img {
+    width: 75px;
+    margin-top: 1px;
+    margin-right: 19px;
+    float: right;
+}
+
+.dev_Team_zag1-img img {
+    width: 100%;
+}
+
+.dev_avtograf {
+    height: 45px;
+}
+
+.dev_Team_all {
+    margin-top: 5px;
+    height: 885px;
+}
+
+.dev_Team_320 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_Team_1024 {
+    display: none;
+}
+
+.dev_Team_blok {
+    box-sizing: border-box;
+    height: 90px;
+    width: 274px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 18px auto 0 auto;
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInLeft;
+}
+
+.dev_Team-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.dev_Team-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dev_Team-rec {
+    box-sizing: border-box;
+    width: 209px;
+    height: 80px;
+    margin-top: 5px;
+    margin-right: 90px;
+    background: var(--dev-team-card);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.dev_Team-name {
+    width: 120px;
+    height: 82px;
+    padding-left: 0px;
+    padding-top: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.dev_Team-name div {
+    width: 80px;
+}
+
+.dev_Team_button_all {
+    display: block;
+    margin: 0 auto;
+}
+
+.button_Team_dev {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+/*----------MENTOR----------*/
+.dev_Mentor_container {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 375px;
+}
+
+.dev_Mentor_zag {
+    display: block;
+    width: 90px;
+    height: 27px;
+    margin: 0 auto;
+    font-weight: 700;
+    margin-top: 79px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.dev_Mentor_All {
+    display: flex;
+    flex-direction: column;
+}
+
+.Mentor_320 {
+    display: flex;
+}
+
+.Mentor_1024 {
+    display: none;
+}
+
+.dev_Mentor_blok {
+    box-sizing: border-box;
+    height: 90px;
+    width: 274px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 18px auto 0 auto;
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInRight;
+}
+
+.dev_Mentor-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.dev_Mentor-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dev_Mentor-rec {
+    box-sizing: border-box;
+    width: 209px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 66px;
+    background: var(--techno);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dev_Mentor-name {
+    width: 120px;
+    height: 82px;
+    padding-left: 36px;
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.dev_link {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.dev_Linkedin {
+    width: 100%;
+}
+
+/*----------TEHNO----------*/
+.dev_Texno {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 180px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.dev_texno_circle {
+    margin: 30px auto 0 auto;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+    border: 2px solid #E6F4F4;
+}
+
+.dev_texno_anime {
+    width: 142px;
+    height: 100px;
+    margin: 51px auto 0 auto;
+}
+
+.dev_texno_anime img {
+    width: 100%;
+}
+
+.dev_tehno-all {
+    display: flex;
+}
+
+.dev_tehno_bl-all {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--techno);
+    transition: all 0.5s;
+}
+
+.dev_tehno_bl-all img,
+.dev_tehno_bl-all.-next img,
+.dev_tehno_bl-all.-prev img {
+    width: 60%;
+    z-index: 5;
+    opacity: 1;
+}
+
+.dev_tehno_bl-all.-active img {
+    width: 62%;
+    z-index: 5;
+    opacity: 1;
+}
+
+.dev_tehno_bl-all.-active {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--techno-active);
+}
+
+.dev_tehno_bl-all.-prev,
+.dev_tehno_bl-all.-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--techno);
+}
+
+.dev_tehno_bl-all.-none {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.dev_tehno_bl-1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 130px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-2 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 231px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-3 {
+    position: absolute;
+    margin-top: 121px;
+    margin-left: 265px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-4 {
+    margin-top: 200px;
+    margin-left: 250px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-5 {
+    margin-top: 255px;
+    margin-left: 190px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-6 {
+    margin-top: 255px;
+    margin-left: 95px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-7 {
+    margin-top: 200px;
+    margin-left: 30px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-8 {
+    position: absolute;
+    margin-top: 121px;
+    margin-left: 15px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-9 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 39px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_texno_text-all {
+    width: 72px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 88px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-color);
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dev_texno_text-all.-active {
+    margin-top: 33px;
+    margin-left: 88px;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------TEHNO ZAG----------*/
+.dev_tehno_zag {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 71px;
+}
+
+.dev_tehno_zag-text {
+    margin: 18px auto 0 auto;
+    width: 230px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.dev_button_all {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-training-order {
+    transform: skew(12deg);
+    margin: auto;
+    font-weight: 700;
+    color: var(--background);
+
+}
+
+.get-offer {
+    width: 300px;
+    height: 55px;
+    background: linear-gradient(180deg, #FFFFCA 0%, #FFFF6A 51.04%, #7A7A00 100%);
+    border-radius: 6px;
+    border: 0;
+    transform: skewX(-13deg);
+    padding: 16px;
+    color: var(--background);
+}
+
+.get-offer p {
+    transform: skewX(13deg);
+    font-size: 18px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border: none;
+    background: transparent;
+    color: var(--background);
+}
+
+.get-offer:hover {
+    background: #BCBC00;
+}
+
+.get-offer:active {
+    background: #FBFB47;
+    border: 1px solid var(--background);
+    border-radius: 6px;
+}
+
+.get-offer:disabled {
+    background: #C6C6C6;
+    border-radius: 6px;
+    color: #787878;
+}
+
+.button_dev {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.dev_tehno_zag-text-span {
+    display: none;
+}
+
+.up {
+    display: none;
+}
+
+.arrow {
+    width: 46px;
+    position: unset;
+    margin-right: 40px;
+}
+
+.fade-in-animation {
+    opacity: 1;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* --------*********************---------- */
+@media only screen and (min-width: 768px) {
+
+    /*----------LOGO----------*/
+    .dev_logo_ALL-cont {
+        width: 768px;
+    }
+
+    .dev_logo_container {
+        width: 768px;
+        height: 313px;
+    }
+
+    .dev_logo_blok {
+        width: 309px;
+        height: 187px;
+    }
+
+    .m_logo_IT {
+        width: 66px;
+        height: 66px;
+        margin-top: 6px;
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+
+    .dev_logo_zag-1 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_logo_zag-1 span {
+        width: 165px;
+        height: 88px;
+    }
+
+    .dev_logo_zag-2 {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_anime-1 {
+        height: 126px;
+        width: 309px;
+    }
+
+    .dev_anime-1 img {
+        width: 412px;
+        margin-left: -40px;
+        margin-top: -148px;
+    }
+
+    .dev_anime-2 {
+        height: 313px;
+        width: 459px;
+    }
+
+    .dev_anime-2 img {
+        width: 495px;
+        margin-right: -11px;
+        margin-top: -110px;
+    }
+
+    /*----------IT----------*/
+    .dev_IT_container {
+        padding-top: 36px;
+        width: 768px;
+        height: 346px;
+    }
+
+    .dev_IT_zag {
+        width: 481px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .dev_IT_container-text {
+        height: 164px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_IT_blok1,
+    .dev_IT_blok2 {
+        flex-direction: row;
+    }
+
+    .dev_IT_container-text-1 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-2 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-3 {
+        height: 54px;
+        margin-top: 29px;
+    }
+
+    .dev_IT_container-text-4 {
+        height: 27px;
+        margin-top: 29px;
+    }
+
+    .dev_IT-320 {
+        display: none;
+    }
+
+    .dev_IT-1024 {
+        display: block;
+    }
+
+    .dev_IT_cont-t-img {
+        width: 82px;
+        margin-top: 5px;
+        padding-left: 35px;
+    }
+
+    .dev_IT_cont-t-text {
+        width: 265px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(2) {
+        width: 325px;
+    }
+
+    .dev_IT_container-text-4 div:nth-child(2) {
+        width: 317px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(1),
+    .dev_IT_container-text-4 div:nth-child(1) {
+        width: 83px;
+        padding-left: 36px;
+    }
+
+    /*----------TEAM----------*/
+    .dev_Team_container {
+        width: 768px;
+        height: 881px;
+    }
+
+    .dev_Team_zag {
+        width: 286px;
+        height: 53px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_Team_zag1 {
+        width: 700px;
+        height: 27px;
+        margin: 16px auto 0 auto;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_avtograf {
+        height: 64px;
+    }
+
+    .dev_Team_zag1-img {
+        width: 107px;
+        margin-right: 64px;
+    }
+
+    .dev_Team_all {
+        margin-top: 5px;
+        height: 648px;
+    }
+
+    .dev_Team_320 {
+        display: none;
+    }
+
+    .dev_Team_1024 {
+        display: flex;
+    }
+
+    .dev_circle-text {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--text-color);
+    }
+
+    .dev_circle-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+    }
+
+    .dev-1 {
+        margin-top: 25px;
+        margin-left: 45px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-1.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-12 {
+        margin-top: 0px;
+        margin-left: 228px;
+        background-color: var(--techno);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-2 {
+        margin-top: 15px;
+        margin-left: 569px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-2.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-3 {
+        margin-top: 191px;
+        margin-left: 224px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-3.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-4 {
+        margin-top: 386px;
+        margin-left: 238px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-4.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-10 {
+        margin-top: 246px;
+        margin-left: 58px;
+        background-color: var(--techno);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-5 {
+        margin-top: 42px;
+        margin-left: 390px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-9.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-11 {
+        margin-top: 246px;
+        margin-left: 398px;
+        background-color: var(--techno);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-6 {
+        margin-top: 424px;
+        margin-left: 44px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-6.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-7 {
+        margin-top: 223px;
+        margin-left: 569px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-7.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-8 {
+        margin-top: 469px;
+        margin-left: 406px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-8.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-9 {
+        margin-top: 406px;
+        margin-left: 566px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-5.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-9.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        cursor: auto;
+        margin-top: 386px;
+        margin-left: 546px;
+    }
+
+    .dev-1.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        cursor: auto;
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+
+    .dev-2.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 5px;
+        margin-left: 559px;
+    }
+
+    .dev-3.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 171px;
+        margin-left: 202px;
+    }
+
+    .dev-4.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 396px;
+        margin-left: 208px;
+    }
+
+    .dev-5.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 42px;
+        margin-left: 359px;
+    }
+
+    .dev-6.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 434px;
+        margin-left: 44px;
+    }
+
+    .dev-7.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 203px;
+        margin-left: 549px;
+    }
+
+    .dev-8.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 449px;
+        margin-left: 376px;
+    }
+
+    .dev-12.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: -10px;
+        margin-left: 218px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev-10.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 246px;
+        margin-left: 48px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev-11.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 246px;
+        margin-left: 388px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev_link-1024 {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        margin-right: -90px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+
+    .dev_link-1024 img {
+        width: 35px;
+        border: 1px var(--text-color) solid;
+        border-radius: 50%;
+    }
+
+    .dev_link-1024-1 {
+        display: none;
+    }
+
+    .dev_Team-rec {
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        background: var(--dev-team-card);
+        border-radius: 50%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .dev_Team-rec-1 {
+        margin-top: 130px;
+        margin-right: 0px;
+        margin-left: 70px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-1.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 190px;
+        margin-left: 120px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2 {
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 595px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 155px;
+        margin-left: 475px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3 {
+        margin-top: 240px;
+        margin-right: 0px;
+        margin-left: 250px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 315px;
+        margin-left: 295px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4 {
+        margin-top: 470px;
+        margin-right: 0px;
+        margin-left: 313px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 320px;
+        margin-left: 140px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5 {
+        margin-top: 108px;
+        margin-right: 0px;
+        margin-left: 400px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 170px;
+        margin-left: 475px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6 {
+        margin-top: 505px;
+        margin-right: 0px;
+        margin-left: 120px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 350px;
+        margin-left: 195px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7 {
+        margin-top: 305px;
+        margin-right: 0px;
+        margin-left: 595px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 155px;
+        margin-left: 415px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8 {
+        margin-top: 490px;
+        margin-right: 0px;
+        margin-left: 530px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 330px;
+        margin-left: 370px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9 {
+        margin-top: 406px;
+        margin-left: 566px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 340px;
+        margin-left: 400px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-name {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        width: 135px;
+        height: 95px;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .dev_Team-name div {
+        width: 110px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    .dev_link1 {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    /*----------MENTOR----------*/
+    .dev_Mentor_container {
+        width: 768px;
+        height: 444px;
+    }
+
+    .dev_Mentor_zag {
+        width: 179px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dev_Mentor_All {
+        flex-direction: row;
+    }
+
+    .Mentor_320 {
+        display: none;
+    }
+
+    .Mentor_1024 {
+        display: flex;
+    }
+
+    .dev_Mentor_blok {
+        height: 332px;
+        width: 200px;
+        ;
+    }
+
+    .dev_Mentor-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dev_Mentor-rec {
+        width: 200px;
+        height: 230px;
+        margin-top: 102px;
+        margin-left: 0px;
+        border-radius: 0px 0px 20px 20px;
+        flex-direction: column;
+    }
+
+    .dev_Mentor-name {
+        width: 105px;
+        height: 54px;
+        padding-left: 0px;
+        padding-top: 110px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .dev_link {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    /*----------TEHNO----------*/
+    .dev_Texno {
+        width: 768px;
+        height: 311px;
+    }
+
+    .dev_texno_circle {
+        margin: 39px auto 0 auto;
+        width: 499px;
+        height: 499px;
+    }
+
+    .dev_texno_anime {
+        width: 190px;
+        height: 134px;
+        margin: 138px auto 0 auto;
+    }
+
+    .dev_tehno_bl-all {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dev_tehno_bl-all.-active {
+
+        height: 100px;
+        width: 100px;
+    }
+
+    .dev_tehno_bl-all.-prev,
+    .dev_tehno_bl-all.-next {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dev_tehno_bl-1 {
+        margin-top: 0px;
+        margin-left: 334px;
+    }
+
+    .dev_tehno_bl-2 {
+        margin-top: 98px;
+        margin-left: 538px;
+    }
+
+    .dev_tehno_bl-3 {
+        margin-top: 215px;
+        margin-left: 601px;
+    }
+
+    .dev_tehno_bl-4 {
+        margin-top: 360px;
+        margin-left: 582px;
+    }
+
+    .dev_tehno_bl-5 {
+        margin-top: 440px;
+        margin-left: 472px;
+    }
+
+    .dev_tehno_bl-6 {
+        margin-top: 440px;
+        margin-left: 232x;
+    }
+
+    .dev_tehno_bl-7 {
+        margin-top: 360px;
+        margin-left: 132px
+    }
+
+    .dev_tehno_bl-8 {
+        margin-top: 215px;
+        margin-left: 108px;
+    }
+
+    .dev_tehno_bl-9 {
+        margin-top: 98px;
+        margin-left: 151px;
+    }
+
+    .dev_texno_text-all {
+        width: 116px;
+        margin-top: 27px;
+        margin-left: 191px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_texno_text-all.-active {
+        margin-top: 67px;
+        margin-left: 191px;
+    }
+
+    /*----------TEHNO ZAG----------*/
+    .dev_tehno_zag {
+        width: 768px;
+        height: 103px;
+    }
+
+    .dev_tehno_zag-text {
+        margin: 17px auto 0 auto;
+        width: 621px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .dev_tehno_zag-text-span {
+        display: contents;
+    }
+
+    .dev_button_all {
+        overflow: hidden;
+        padding-top: 15px;
+    }
+
+    .up {
+        display: block;
+        width: 32px;
+        height: 44px;
+        position: relative;
+        bottom: 57px;
+        right: 31px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .up-img {
+        width: 32px;
+        height: 44px;
+    }
+}
+
+
+/* --------****************************************************---------- */
+@media only screen and (min-width: 1024px) {
+
+    /*----------LOGO----------*/
+    .dev_logo_ALL {
+        width: 100%;
+    }
+
+    .dev_logo_ALL-cont {
+        width: 1024px;
+    }
+
+    .dev_logo_container {
+        width: 1024px;
+        height: 313px;
+        display: flex;
+    }
+
+    .dev_logo_container-l {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dev_logo_blok {
+        width: 437px;
+        height: 187px;
+    }
+
+    .m_logo_IT {
+        width: 66px;
+        height: 66px;
+        margin-top: 15px;
+        margin-left: 68px;
+        margin-right: 20px;
+    }
+
+    .m_logo_IT img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dev_logo_zag-1 {
+        display: flex;
+        margin-top: 18px;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .dev_logo_zag-1 span {
+        width: 220px;
+        height: 96px;
+    }
+
+    .dev_logo_zag-2 {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_anime-1 {
+        height: 126px;
+        width: 437px;
+        overflow: hidden;
+    }
+
+    .dev_anime-1 img {
+        width: 540px;
+        margin-left: -28px;
+        margin-top: -205px;
+    }
+
+    .dev_anime-2 {
+        height: 313px;
+        width: 587px;
+        overflow: hidden;
+    }
+
+    .dev_anime-2 img {
+        width: 623px;
+        margin-right: -11px;
+        margin-top: -200px;
+    }
+
+    /*----------IT----------*/
+    .dev_IT_container {
+        padding-top: 36px;
+        width: 1024px;
+        height: 346px;
+    }
+
+    .dev_IT_zag {
+        display: block;
+        width: 481px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+        visibility: visible;
+        animation-delay: 0.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text {
+        height: 164px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_IT_blok1,
+    .dev_IT_blok2 {
+        flex-direction: row;
+    }
+
+    .dev_IT_container-text-1 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 1.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 0.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-1 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 0.5s;
+        animation-name: fadeInLeft;
+    }
+
+    .dev_IT_container-text-2 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 3.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 2.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-2 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 2.5s;
+        animation-name: fadeInLeft;
+    }
+
+    .dev_IT_container-text-3 {
+        height: 54px;
+        margin-top: 29px;
+    }
+
+    .dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 2.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 1.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-3 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 1.5s;
+        animation-name: fadeInLeft;
+    }
+
+    .dev_IT_container-text-4 {
+        height: 27px;
+        margin-top: 29px;
+    }
+
+    .dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 4.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 3.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-4 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 3.5s;
+        animation-name: fadeInLeft;
+    }
+
+    .dev_IT-320 {
+        display: none;
+    }
+
+    .dev_IT-1024 {
+        display: block;
+    }
+
+    .dev_IT_cont-t-img {
+        width: 128px;
+        margin-top: 5px;
+        padding-left: 81px;
+    }
+
+    .dev_IT_cont-t-text {
+        width: 282px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(2) {
+        width: 330px;
+    }
+
+    .dev_IT_container-text-4 div:nth-child(2) {
+        width: 317px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(1),
+    .dev_IT_container-text-4 div:nth-child(1) {
+        width: 113px;
+        padding-left: 66px;
+    }
+
+    /*----------TEAM----------*/
+    .dev_Team_container {
+        width: 1024px;
+        height: 864px;
+    }
+
+    .dev_Team_zag {
+        display: block;
+        width: 400px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dev_Team_zag1 {
+        width: 850px;
+        height: 32px;
+        margin: 24px auto 0 auto;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_Team_zag1-img {
+        width: 107px;
+        margin-right: 113px;
+    }
+
+    .dev_Team_all {
+        margin-top: 5px;
+        height: 624px;
+    }
+
+    .dev_Team_320 {
+        display: none;
+    }
+
+    .dev_Team_1024 {
+        display: flex;
+    }
+
+    .dev_circle-text {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--text-color);
+        visibility: visible;
+        animation-delay: 0.3s;
+        animation-name: fadeInUp;
+    }
+
+    .dev_circle-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        visibility: visible;
+        animation-delay: 0.3s;
+        animation-name: fadeInUp;
+    }
+
+    .dev-1 {
+        margin-top: 48px;
+        margin-left: 78px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-1.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-12 {
+        margin-top: 0px;
+        margin-left: 302px;
+        background-color: var(--techno);
+        border: 2px solid var(--techno-active);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-2 {
+        margin-top: 0px;
+        margin-left: 539px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-2.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-3 {
+        margin-top: 440px;
+        margin-left: 334px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-3.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-4 {
+        margin-top: 62px;
+        margin-left: 765px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-4.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-10 {
+        margin-top: 264px;
+        margin-left: 101px;
+        background-color: var(--techno);
+        border: 2px solid var(--techno-active);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-5 {
+        margin-top: 198px;
+        margin-left: 302px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-9.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-11 {
+        margin-top: 198px;
+        margin-left: 527px;
+        background-color: var(--techno);
+        border: 2px solid var(--techno-active);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-6 {
+        margin-top: 480px;
+        margin-left: 122px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-6.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-7 {
+        margin-top: 440px;
+        margin-left: 550px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-7.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-8 {
+        margin-top: 256px;
+        margin-left: 721px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-8.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-9 {
+        margin-top: 480px;
+        margin-left: 760px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../images/dev-5.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-1.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        cursor: auto;
+        margin-top: 28px;
+        margin-left: 58px;
+    }
+
+    .dev-2.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: -20px;
+        margin-left: 519px;
+    }
+
+    .dev-3.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 420px;
+        margin-left: 314px;
+    }
+
+    .dev-4.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 42px;
+        margin-left: 745px;
+    }
+
+    .dev-5.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 178px;
+        margin-left: 282px;
+    }
+
+    .dev-6.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 460px;
+        margin-left: 102px;
+    }
+
+    .dev-7.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 420px;
+        margin-left: 530px;
+    }
+
+    .dev-8.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 236px;
+        margin-left: 701px;
+    }
+
+    .dev-9.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 460px;
+        margin-left: 760px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev-10.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 244px;
+        margin-left: 81px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev-11.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 178px;
+        margin-left: 507px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev-12.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: -20px;
+        margin-left: 288px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .dev_link-1024 {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        margin-right: -90px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+
+    .dev_link-1024 img {
+        width: 35px;
+        border: 1px var(--text-color) solid;
+        border-radius: 50%;
+    }
+
+    .dev_link-1024-1 {
+        display: none;
+    }
+
+    .dev_Team-rec {
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        border: 2px solid var(--techno-active);
+        background: var(--background);
+        border-radius: 50%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .dev_Team-rec-1 {
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 105px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-1.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 190px;
+        margin-left: 120px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2 {
+        margin-top: -20px;
+        margin-left: 519px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 130px;
+        margin-left: 445px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3 {
+        margin-top: 420px;
+        margin-left: 314px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 315px;
+        margin-left: 410px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4 {
+        margin-top: 42px;
+        margin-left: 745px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 145px;
+        margin-left: 605px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5 {
+        margin-top: 178px;
+        margin-left: 282px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 260px;
+        margin-left: 430px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6 {
+        margin-top: 400px;
+        margin-left: 102px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 340px;
+        margin-left: 165px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7 {
+        margin-top: 420px;
+        margin-left: 550px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 320px;
+        margin-left: 420px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8 {
+        margin-top: 236px;
+        margin-left: 701px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 300px;
+        margin-left: 535px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9 {
+        margin-top: 460px;
+        margin-left: 760px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 350px;
+        margin-left: 830px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-name {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        width: 135px;
+        height: 122px;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+
+    .dev_Team-name div {
+        width: 110px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    /*----------MENTOR----------*/
+    .dev_Mentor_container {
+        width: 1024px;
+        height: 444px;
+    }
+
+    .dev_Mentor_zag {
+        width: 179px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dev_Mentor_All {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Mentor_320 {
+        display: none;
+    }
+
+    .Mentor_1024 {
+        display: flex;
+    }
+
+    .dev_Mentor_blok {
+        box-sizing: border-box;
+        height: 332px;
+        width: 200px;
+        display: flex;
+        flex-direction: col;
+        justify-content: flex-start;
+        margin: 18px auto 0 auto;
+    }
+
+    .dev_Mentor-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dev_Mentor-rec {
+        width: 200px;
+        height: 230px;
+        margin-top: 102px;
+        margin-left: 0px;
+        border-radius: 0px 0px 20px 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dev_Mentor-name {
+        width: 105px;
+        height: 54px;
+        padding-left: 0px;
+        padding-top: 110px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .dev_link {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 24px;
+    }
+
+    /*----------TEHNO----------*/
+    .dev_Texno {
+        width: 1024px;
+        height: 311px;
+    }
+
+    .dev_texno_circle {
+        margin: 39px auto 0 auto;
+        width: 499px;
+        height: 499px;
+    }
+
+    .dev_texno_anime {
+        width: 190px;
+        height: 134px;
+        margin: 138px auto 0 auto;
+    }
+
+    .dev_tehno_bl-all {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dev_tehno_bl-all.-active {
+
+        height: 100px;
+        width: 100px;
+    }
+
+    .dev_tehno_bl-all.-prev,
+    .dev_tehno_bl-all.-next {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dev_tehno_bl-1 {
+        margin-top: 0px;
+        margin-left: 462px;
+    }
+
+    .dev_tehno_bl-2 {
+        margin-top: 98px;
+        margin-left: 666px;
+    }
+
+    .dev_tehno_bl-3 {
+        margin-top: 215px;
+        margin-left: 729px;
+    }
+
+    .dev_tehno_bl-4 {
+        margin-top: 360px;
+        margin-left: 710px;
+    }
+
+    .dev_tehno_bl-5 {
+        margin-top: 440px;
+        margin-left: 600px;
+    }
+
+    .dev_tehno_bl-6 {
+        margin-top: 440px;
+        margin-left: 360px;
+    }
+
+    .dev_tehno_bl-7 {
+        margin-top: 360px;
+        margin-left: 260px
+    }
+
+    .dev_tehno_bl-8 {
+        margin-top: 215px;
+        margin-left: 236px;
+    }
+
+    .dev_tehno_bl-9 {
+        margin-top: 98px;
+        margin-left: 279px;
+    }
+
+    .dev_texno_text-all {
+        width: 116px;
+        margin-top: 27px;
+        margin-left: 191px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_texno_text-all.-active {
+        margin-top: 67px;
+        margin-left: 191px;
+    }
+
+    /*----------TEHNO ZAG----------*/
+    .dev_tehno_zag {
+        display: block;
+        margin: 0 auto;
+        width: 1024px;
+        height: 93px;
+    }
+
+    .dev_tehno_zag-text {
+        margin: 17px auto 0 auto;
+        width: 621px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .dev_tehno_zag-text-span {
+        display: contents;
+    }
+
+    .dev_button_all {
+        display: block;
+        margin: 0 auto;
+        padding-top: 25px;
+        overflow: hidden;
+    }
+
+    .up {
+        display: block;
+        width: 46px;
+        height: 60px;
+        position: relative;
+        bottom: 60px;
+        right: 24px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .up-img {
+        width: 46px;
+        height: 60px;
+    }
+}
