@@ -1,43 +1,13 @@
-:root {
-    --bg-color: #eefbea;
-    --color-black: #0b0b0b;
-    --color-green-600: #47a824;
-    --color-green-500: #2c6716;
-    --color-green-400: #9be481;
-    --color-green-300: #98d198;
-    --color-green-100: #def6d5;
-    --color-green-50: #eefbea;
-    --color-borderaux-500: #800000;
-    --color-borderaux-300: #a47e7e;
-    --color-teacher-bg: #e7dfc8;
-    --color-yellow: #ffcc46;
-    --color-red: #b60c0c
-}
+@import url(component.css);
 
-* {
-    box-sizing: border-box;
-    font-style: normal;
-    margin: 0;
-    padding: 0
-}
-
-body {
-    font-family: "Open Sans";
+#block-2 .btn-register {
+    width: 312px;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #3008A1;
+    margin: 0 calc(50vw - 270px);
+    color: #FFF;
+    font-size: 32px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    background-color: var(--color-green-300)
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100vh;
 }
