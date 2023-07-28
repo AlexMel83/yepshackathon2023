@@ -1,9 +1,9 @@
 :root {
-    --background: #000;
-    --text-color: #FFF;
-    --background-header: #FFF;
-    --techno-active: #FFFF54;
-    --techno: #767600;
+    --background: #ffffff;
+    --text-color: #000000;
+    --background-header: #000000;
+    --techno-active: #020068;
+    --techno: #5c51ff;
     --dev-team-card: #000;
 }
 
@@ -51,16 +51,16 @@
 }
 
 .m_logo_IT {
-    width: 27px;
-    height: 27px;
+    width: 100px;
+    height: 100px;
     margin-top: 11px;
     margin-left: 9px;
     margin-right: 8px;
 }
 
 .m_logo_IT img {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
 }
 
 .dev_logo_zag-1 {
@@ -399,8 +399,11 @@
 }
 
 .dev_Team_button_all {
-    display: block;
+    display: flex;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .button_Team_dev {
@@ -412,6 +415,7 @@
     justify-content: center;
     text-decoration: none;
     margin-top: 50px;
+
 }
 
 /*----------MENTOR----------*/
@@ -532,7 +536,10 @@
 }
 
 .dev_texno_anime img {
-    width: 100%;
+    width: 200%;
+    position: relative;
+    top: -100px;
+    left: -80px;
 }
 
 .dev_tehno-all {
@@ -720,7 +727,7 @@
 .get-offer {
     width: 300px;
     height: 55px;
-    background: linear-gradient(180deg, #FFFFCA 0%, #FFFF6A 51.04%, #7A7A00 100%);
+    background: linear-gradient(180deg, #75a1e1 0%, #5c51ff 51.04%, #24035a 100%);
     border-radius: 6px;
     border: 0;
     transform: skewX(-13deg);
@@ -855,8 +862,8 @@
     }
 
     .dev_anime-2 img {
-        width: 495px;
-        margin-right: -11px;
+        width: 1000px;
+        margin-right: 0px;
         margin-top: -110px;
     }
 
@@ -1720,10 +1727,10 @@
     }
 
     .m_logo_IT {
-        width: 66px;
-        height: 66px;
+        width: 100px;
+        height: 100px;
         margin-top: 15px;
-        margin-left: 68px;
+        margin-left: 45px;
         margin-right: 20px;
     }
 
@@ -1769,9 +1776,9 @@
     }
 
     .dev_anime-2 img {
-        width: 623px;
-        margin-right: -11px;
-        margin-top: -200px;
+        width: 600px;
+        margin-right: -0px;
+        margin-top: -100px;
     }
 
     /*----------IT----------*/
@@ -1950,8 +1957,11 @@
     }
 
     .dev_Team_zag1-img {
-        width: 107px;
+        width: 307px;
         margin-right: 113px;
+        background-image: url(../img/anume3.png);
+        width: 20%;
+        height: 20vw;
     }
 
     .dev_Team_all {
@@ -2001,7 +2011,7 @@
         margin-left: 78px;
         opacity: 0.5;
         cursor: pointer;
-        background-image: url(../images/dev-1.png);
+        background-image: url(../img/UliaKozachko.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2020,7 +2030,7 @@
         margin-left: 539px;
         opacity: 0.5;
         cursor: pointer;
-        background-image: url(../images/dev-2.png);
+        background-image: url(../img/OlexMeleshko.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2059,7 +2069,7 @@
         margin-left: 302px;
         opacity: 0.5;
         cursor: pointer;
-        background-image: url(../images/dev-9.png);
+        background-image: url(../img/KseniaBartash.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2074,11 +2084,11 @@
     }
 
     .dev-6 {
-        margin-top: 480px;
-        margin-left: 122px;
+        margin-top: 422px;
+        margin-left: 276px;
         opacity: 0.5;
         cursor: pointer;
-        background-image: url(../images/dev-6.png);
+        background-image: url(../img/AnastasiaVoloshyna.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2094,11 +2104,11 @@
     }
 
     .dev-8 {
-        margin-top: 256px;
-        margin-left: 721px;
+        margin-top: 387px;
+        margin-left: 489px;
         opacity: 0.5;
         cursor: pointer;
-        background-image: url(../images/dev-8.png);
+        background-image: url(../img/DenysYatsik.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2176,8 +2186,8 @@
         border: none;
         position: absolute;
         opacity: 1 !important;
-        margin-top: 460px;
-        margin-left: 102px;
+        margin-top: 422px;
+        margin-left: 276px;
     }
 
     .dev-7.-active {
@@ -2198,8 +2208,8 @@
         border: none;
         position: absolute;
         opacity: 1 !important;
-        margin-top: 236px;
-        margin-left: 701px;
+        margin-top: 387px;
+        margin-left: 489px;
     }
 
     .dev-9.-active {
@@ -2383,8 +2393,8 @@
     }
 
     .dev_Team-rec-6 {
-        margin-top: 400px;
-        margin-left: 102px;
+        margin-top: 396px;
+        margin-left: 268px;
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s;
@@ -2393,8 +2403,8 @@
     .dev_Team-rec-6.-active {
         width: 190px;
         height: 145px;
-        margin-top: 340px;
-        margin-left: 165px;
+        margin-top: 296px;
+        margin-left: 268px;
         opacity: 1;
         visibility: visible;
         z-index: 5;
@@ -2421,8 +2431,8 @@
     }
 
     .dev_Team-rec-8 {
-        margin-top: 236px;
-        margin-left: 701px;
+        margin-top: 359px;
+        margin-left: 535px;
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s;
@@ -2431,7 +2441,7 @@
     .dev_Team-rec-8.-active {
         width: 190px;
         height: 145px;
-        margin-top: 300px;
+        margin-top: 279px;
         margin-left: 535px;
         opacity: 1;
         visibility: visible;
