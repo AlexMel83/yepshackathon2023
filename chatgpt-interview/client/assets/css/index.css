@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
     height: 100%;
 }
+
 /* Add background color to the body */
 body {
     background-color: rgba(68, 70, 84, 1.0);
@@ -31,18 +33,24 @@ select {
     word-break: break-word;
 }
 
-#response-list .response-container, #bottom-container {
+#response-list .response-container,
+#bottom-container {
     padding: 15px 10%;
 }
 
-@media (pointer:none), (pointer:coarse) {
-    #response-list .response-container, #bottom-container {
+@media (pointer:none),
+(pointer:coarse) {
+
+    #response-list .response-container,
+    #bottom-container {
         padding: 15px;
     }
+
     .ai-image {
         max-width: 100%;
     }
 }
+
 #response-list .response-container .avatar-image {
     width: 30px;
     height: 30px;
@@ -79,20 +87,21 @@ select {
 }
 
 .chatgpt-response {
-    background-color: rgba(68, 70, 84, 1);
+    background-color: rgb(161, 162, 167);
 }
 
 .my-question {
     background-color: rgba(52, 53, 65, 1);
 }
+
 /* Change background color of the input container */
 #input-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(64, 65, 79, 1);
-    border-color: rgba(32,33,35,.5);
+    background-color: rgb(161, 162, 167);
+    border-color: rgba(32, 33, 35, .5);
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -157,11 +166,11 @@ select {
 }
 
 #model-select-container select option:not(:checked) {
-    background: rgba(32,33,35,.8);
+    background: rgba(32, 33, 35, .8);
 }
 
 #model-select-container select option {
-    background: rgba(32,33,35,.5);
+    background: rgba(32, 33, 35, .5);
 }
 
 
@@ -177,11 +186,11 @@ select {
 }
 
 #interview-select-container select option:not(:checked) {
-    background: rgba(32,33,35,.8);
+    background: rgba(32, 33, 35, .8);
 }
 
 #interview-select-container select option {
-    background: rgba(32,33,35,.5);
+    background: rgba(32, 33, 35, .5);
 }
 
 
@@ -197,11 +206,11 @@ select {
 }
 
 #count-questions-select select option:not(:checked) {
-    background: rgba(32,33,35,.8);
+    background: rgba(32, 33, 35, .8);
 }
 
 #count-questions-select select option {
-    background: rgba(32,33,35,.5);
+    background: rgba(32, 33, 35, .5);
 }
 
 .ai-image {
@@ -211,22 +220,40 @@ select {
 
 /* Override hljs to match for chatgpt */
 .hljs {
-    background: rgb(0,0,0) !important;
+    background: rgb(0, 0, 0) !important;
     color: white !important;
 }
 
-.hljs-section, .hljs-title {
+.hljs-section,
+.hljs-title {
     color: #f22c3d !important;
 }
 
-.hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
     color: #df3079 !important;
 }
 
-.hljs-addition, .hljs-built_in, .hljs-bullet, .hljs-code {
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
     color: #e9950c !important;
 }
 
-.hljs-link, .hljs-operator, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
     color: white !important;
 }
