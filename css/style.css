@@ -40,8 +40,8 @@
     margin: 0 auto;
 }
 
-#block-2 .btn-register,
-#block-1 .btn-ai {
+#block-2 a .btn-register,
+#block-1 a .btn-ai {
     display: block;
     width: 312px;
     height: 82px;
