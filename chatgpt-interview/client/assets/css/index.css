@@ -10,6 +10,20 @@ select {
     text-overflow: ellipsis;
 }
 
+.m_logo_IT {}
+
+.Text_1 {
+    color: white;
+    text-align: center
+}
+
+.b_1 {
+    font-size: large
+}
+
+
+
+
 /* Remove border color from the response list container */
 #response-list {
     border: none;

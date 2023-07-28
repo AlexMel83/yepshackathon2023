@@ -14,7 +14,7 @@ const fileInput = document.getElementById("whisper-file");
 
 let prevQuestion = "";
 let countQueries = Number(countSelect.value);
-const startText = "Привіт, тут ти можешь пройти тестову співбесіду, " +
+const startText = "Тисни тут та пройди тестову співбесіду, " +
     "для початку обери напрям за яким буде проходити співбесіда та кількість питань. І напишіть в чат #start щоб почати";
 const chngeMessage = "Ви змінили налаштування. Якщо готові напишить в чат #start щоб почати";
 addResponse(0, startText);
@@ -164,9 +164,9 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
     if (prompt.trim() === "#start" || !prevQuestion) {
         prompt = `Ти проводиш співбесіду. Задай одне питання по темі ${interviewSelect.value}.`;
     } else if (countQueries > 0) {
-        prompt = `Оціни відповідиь '${prompt.trim()}' на питання '${prevQuestion.trim()}'. 
+        prompt = `Оціни відповідиь '${prompt.trim()}' на питання по 100 бальній системі '${prevQuestion.trim()}'. 
         Якщо треба доповни відповідь або дай правильну. 
-        Після цього задай одне нове питання по темі ${interviewSelect.value}`;
+        Задавай питання після відповіді ${interviewSelect.value}`;
     } else {
         addResponse(0, startText);
         return;
