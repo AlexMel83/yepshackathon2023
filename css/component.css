@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Amatic SC';
-    src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url('../fonts/Amaticscbold.woff2') format('woff2'), url('../fonts/Amaticscbold.woff') format('woff'), url('../fonts/Amaticscbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --bg-color: #eefbea;
@@ -32,10 +27,11 @@
 }
 
 body {
-    font-family: "Open Sans";
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
 }
 
 a {
@@ -59,13 +55,15 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
-    line-height: 81px
+    color: #3008A1;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 32px;
-    line-height: 50px
+    color: #3008A1;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 h4 {
@@ -167,13 +165,11 @@ li>a.dropdown-item.lang {
 }
 
 .menu-link {
-    font-family: "Open Sans";
+    color: #3008A1;
+    font-size: 26px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--color-black);
-    margin-right: 10px;
+    font-weight: 600;
+    line-height: normal;
 }
 
 &:after {
@@ -247,4 +243,13 @@ label {
 
 .icon:hover {
     color: var(--color-borderaux-500)
+}
+
+footer a {
+    font-size: 22px;
+    color: #3008A1;
+}
+
+footer .link-body-emphasis {
+    fill: #3008A1;
 }
