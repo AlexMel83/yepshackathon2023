@@ -1,0 +1,77 @@
+/*Обнулення*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+/*=======================================================*/
+
+/*----------------block-1--------------*/
+
+.page_2 .block-1 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 400;
+	border-bottom: 2px solid black;
+}
+
+.page_2 .text_block-1 {
+	font-size: 20px;
+	line-height: 30px;
+	color: #320941;
+	margin: 100px 0 100px 0;
+}
+
+.page_2 .title_block-1 {
+
+	font-size: 55px;
+	line-height: 80px;
+	color: #FF0000;
+}
+
+.page_2 .image_block-1 {
+	width: 600px;
+	height: 670px;
+}
+
+
+/*----------------block-2--------------*/
+.page_2 .title_block-2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.page_2 .image_block-2 {
+	width: 700px;
+	height: 770px;
+}
+
+.page_2 .button_block-2 {
+	display: flex;
+	justify-content: right;
+}
+
+.page_2 .button {
+	background-color: #3008A1;
+	color: white;
+
+}
