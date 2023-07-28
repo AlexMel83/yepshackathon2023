@@ -7,8 +7,18 @@ const submitButton = document.getElementById('submit-button');
 const regenerateResponseButton = document.getElementById('regenerate-response-button');
 const promptInput = document.getElementById('prompt-input');
 const modelSelect = document.getElementById('model-select');
+const interviewSelect = document.getElementById('interview-select');
+const countSelect = document.getElementById('count-select');
 const responseList = document.getElementById('response-list');
 const fileInput = document.getElementById("whisper-file");
+
+let prevQuestion = "";
+let countQueries = Number(countSelect.value);
+const startText = "Привіт, тут ти можешь пройти тестову співбесіду, " +
+    "для початку обери напрям за яким буде проходити співбесіда та кількість питань. І напишіть в чат #start щоб почати";
+const chngeMessage = "Ви змінили налаштування. Якщо готові напишить в чат #start щоб почати";
+addResponse(0, startText);
+
 
 modelSelect.addEventListener("change", function() {
     if (modelSelect.value === "whisper") {
@@ -20,7 +30,23 @@ modelSelect.addEventListener("change", function() {
         // Enable the input field when Whisper is not selected
         promptInput.style.display = 'block';
     }
+    countQueries = Number(countSelect.value);
+    addResponse(0, chngeMessage);
+
 });
+
+interviewSelect.addEventListener("change", function() {
+    countQueries = Number(countSelect.value);
+
+    addResponse(0, chngeMessage);
+});
+
+countSelect.addEventListener("change", function() {
+    countQueries = Number(countSelect.value);
+
+    addResponse(0, chngeMessage);
+});
+
 
 let isGeneratingResponse = false;
 
@@ -133,7 +159,19 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
         return;
     }
     // Get the prompt input
-    const prompt = _promptToRetry ?? promptInput.textContent;
+    let prompt = _promptToRetry ?? promptInput.textContent;
+    const origPromt = prompt;
+    if (prompt.trim() === "#start" || !prevQuestion) {
+        prompt = `Ти проводиш співбесіду. Задай одне питання по темі ${interviewSelect.value}.`;
+    } else if (countQueries > 0) {
+        prompt = `Оціни відповідиь '${prompt.trim()}' на питання '${prevQuestion.trim()}'. 
+        Якщо треба доповни відповідь або дай правильну. 
+        Після цього задай одне нове питання по темі ${interviewSelect.value}`;
+    } else {
+        addResponse(0, startText);
+        return;
+    }
+    console.log(prompt, countQueries);
 
     // If a response is already being generated or the prompt is empty, return
     if (isGeneratingResponse || !prompt) {
@@ -148,7 +186,7 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
 
     if (!_uniqueIdToRetry) {
         // Add the prompt to the response list
-        addResponse(true, `<div>${prompt}</div>`);
+        addResponse(true, `<div>${origPromt}</div>`);
     }
 
     // Get a unique ID for the response element
@@ -175,11 +213,18 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
             })
         });
         if (!response.ok) {
+            let responseText = await response.text();
+            countQueries = countQueries-1;
+            prevQuestion = responseText.split(":")
+            prevQuestion = prevQuestion[prevQuestion.length - 1]
             setRetryResponse(prompt, uniqueId);
-            setErrorForResponse(responseElement, `HTTP Error: ${await response.text()}`);
+            setErrorForResponse(responseElement, `HTTP Error: ${responseText}`);
             return;
         }
         const responseText = await response.text();
+        countQueries = countQueries-1;
+        prevQuestion = responseText.split(":")
+        prevQuestion = prevQuestion[prevQuestion.length - 1]
         if (model === 'image') {
             // Show image for `Create image` model
             responseElement.innerHTML = `<img src="${responseText}" class="ai-image" alt="generated image"/>`
