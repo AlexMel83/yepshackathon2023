@@ -1,0 +1,137 @@
+@import url(component.css);
+
+#block-1,
+#block-3 {
+    position: relative;
+}
+
+#block-1 p {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 78px 20%;
+}
+
+#block-1 .left-img {
+    background-image: url(../img/block1-left-img.png);
+    background-size: cover;
+    width: 20vw;
+    height: calc(16vw * 1.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#block-1 .right-img {
+    background-image: url(../img/block1-right-img.png);
+    background-size: cover;
+    width: 24vw;
+    height: calc(22vw * 1.8);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#block-1 .title-ai {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#block-2 a .btn-register,
+#block-1 a .btn-ai {
+    display: block;
+    width: 312px;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #3008A1;
+    margin: 40px auto;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+#block-2 h2 {
+    padding: 15px;
+}
+
+#block-2 .card {
+    max-width: 536px;
+    min-height: 340px;
+    margin: 0 8%;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3008A1;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#block-2 .card-header h4 {
+    color: #3008A1;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+#block-2 .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#block-2 .icon-card {
+    width: 176px;
+    height: 178.206px;
+    transform: rotate(8.6deg);
+    flex-shrink: 0;
+}
+
+#block-3 {
+    padding-bottom: calc(8vw * 1.8);
+}
+
+#block-3 h2.title {
+    padding: 44px;
+}
+
+#block-3 h3 {
+    color: #3008A1;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+#block-3 .accordion {
+    width: 80vw;
+    margin-left: auto;
+}
+
+#block-3 .accordion-button {
+    color: #3008A1;
+    font-size: 48px;
+    font-weight: 400;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#block-3 .accordion-button::after {
+    scale: 1.5;
+}
+
+#block-3 .left-img {
+    background-image: url(../img/block-3-left-img.png);
+    background-size: cover;
+    width: 22vw;
+    height: calc(16vw * 1.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
