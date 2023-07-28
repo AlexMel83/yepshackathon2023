@@ -19,13 +19,12 @@
     <meta property="og:url" content="https://fromavdiivka.city">
     <link rel="canonical" href="https://fromavdiivka.city">
     <!-- favicon-laptop-desktop -->
-    <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
     <!-- favicon-mobile -->
-    <link rel="icon" type="image/png" href="img/favicon-mobile.ico" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -34,38 +33,209 @@
 
 <body>
     <div class="wrap">
-        <header class="p-3 text-bg-dark">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
+        <div class="container">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+                    <div class="container-fluid header-menu">
+                        <a href="index.html" title="">
+                            <div class="header-logo"></div>
+                        </a>
+                        <div class="mob-lang-select">
+                            <a class="lang-select" href="/">UA</a>
+                            <div class="vertical"></div>
+                            <a href="/index-en.html">EN</a>
+                        </div>
+                        <div class="header-burger navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"><span></span></div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
+                                <div></div>
+                                <li class="nav-item" id="about-link"><a class="nav-link menu-link"
+                                        href="master.html">Про нас</a></li>
+                                <li class="nav-item" id="lern-link"><a class="nav-link menu-link"
+                                        href="#contacts">Навчальний розділ</a></li>
+                                <li class="nav-item" id="project-link"><a class="nav-link menu-link"
+                                        href="#contacts">Замовити проект</a></li>
+                                <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
+                                        href="#contacts">Контакти</a></li>
 
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                    </ul>
 
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-                            aria-label="Search">
-                    </form>
+                                <li class="nav-item dropdown" id="navlang">
+                                    <span class="nav-link dropdown-toggle menu-link" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        UA</span>
+                                    <ul class="dropdown-menu lang">
+                                        <li><a class="dropdown-item lang" href="/">UA</a></li>
+                                        <li><a class="dropdown-item lang" href="/index-en.html">EN</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="header-icon-social">
+                                <a href="https://www.facebook.com/profile.php?id=100086510772962"
+                                    class="social-link icon" title="facebook" target="_blank">
+                                    <svg svg="" class="icon">
+                                        <use xlink:href="src/icons/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/art_studioleonardo/" class="social-link icon"
+                                    title="instagram" target="_blank">
+                                    <svg class="icon">
+                                        <use xlink:href="src/icons/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="block-1">
+                <h3>Шукаєш свою першу роботу в IT?</h3>
+                <h3>Досвіду немає, портфоліо та резюме викликає питання?</h3>
+                <h2>Тоді саме ми тобі допоможемо! </h2>
+                <p>Наша платформа об'єднує талановитих
+                    фахівців-початківців та клієнтів.  (тут бУДЕ ТЕКСТ)Наша платформа об'єднує талановитих
+                    фахівців-початківців та клієнтів.  (тут бУДЕ ТЕКСТ)</p>
+                <div class="left-img"></div>
+                <div class="right-img"></div>
+                <hr>
+            </div>
+            <div id="block-2">
+                <h2>Що ми пропонуємо:</h2>
 
-                    <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2">Login</button>
-                        <button type="button" class="btn btn-warning">Sign-up</button>
+                <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+                    <div class="col">
+                        <div class="card mb-6 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Чудове портфоліо та CV</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>та можливість продемонструвати свої навички та досягнення перед потенційними
+                                    роботодавцями</p>
+                                <svg svg class="icon-card">
+                                    <use xlink:href="img/sprite.svg#assignment"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-6 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Досвід роботи на реальних проектах</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>та змогу набути цінного практичного досвіду та розвинути свої професійні здібності
+                                </p>
+                                <svg svg class="icon-card">
+                                    <use xlink:href="img/sprite.svg#spatial"></use>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <div class="container">
-            <h1 class="page-title">Головна сторінка ІТ кластеру</h1>
+                <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+                    <div class="col">
+                        <div class="card mb-6 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Гарантія повернення коштів</h4>
+                            </div>
+                            <div class="card-body">
+                                <p> після успішного завершення проектів</p>
+                                <svg svg class="icon-card">
+                                    <use xlink:href="img/sprite.svg#curency"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-6 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Рекомендації та відгуки</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>та від нашої компанії допоможуть йому підтвердити свою кваліфікацію та довіру від
+                                    роботодавців</p>
+                                <svg svg class="icon-card">
+                                    <use xlink:href="img/sprite.svg#book"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-register">Зареєструватися</button>
 
+            </div>
+            <div id="block-3">
+                <hr>
+                <h2 class="title">Найчастіші запитання</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                1 Скільки триває проект (навчання, стажування)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                2 Скільки триває проект (навчання, стажування)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                3 Скільки триває проект (навчання, стажування)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                4 Скільки триває проект (навчання, стажування)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-img"></div>
+            </div>
             <footer class="footer">
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -111,7 +281,10 @@
     </div>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/component.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/component.js"></script> -->
 </body>
 
 </html>
