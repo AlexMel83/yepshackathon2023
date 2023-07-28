@@ -119,8 +119,9 @@ select {
     flex-grow: 1;
     padding: 10px;
     border-radius: 5px;
+    font-size: 22px;
     min-height: 20px;
-    color: white;
+    color: #3008A1;
     overflow: auto;
 }
 
@@ -169,18 +170,18 @@ select {
 }
 
 #model-select-container {
-    color: white;
+    color: #3008A1;
 }
 
 #model-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #3008A1;
 }
 
 #model-select-container select option:not(:checked) {
-    background: rgba(32, 33, 35, .8);
+    background: rgba(177, 178, 180, 0.8);
 }
 
 #model-select-container select option {
@@ -189,18 +190,18 @@ select {
 
 
 #interview-select-container {
-    color: white;
+    color: #3008A1;
 }
 
 #interview-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #3008A1;
 }
 
 #interview-select-container select option:not(:checked) {
-    background: rgba(32, 33, 35, .8);
+    background: rgba(177, 178, 180, 0.8);
 }
 
 #interview-select-container select option {
@@ -209,18 +210,18 @@ select {
 
 
 #count-questions-select {
-    color: white;
+    color: #3008A1;
 }
 
 #count-questions-select select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #3008A1;
 }
 
 #count-questions-select select option:not(:checked) {
-    background: rgba(32, 33, 35, .8);
+    background: rgba(177, 178, 180, 0.8);
 }
 
 #count-questions-select select option {
