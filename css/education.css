@@ -19,13 +19,13 @@ li {
 	list-style: none;
 }
 
-img {
-	vertical-align: top;
-}
 
-/*=======================================================*/
+/*======================= EDUCATION =========================*/
 
 /*----------------block-1--------------*/
+.page_2 {
+	background-color: #E3E6EE;
+}
 
 .page_2 .block-1 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -41,15 +41,14 @@ img {
 }
 
 .page_2 .title_block-1 {
-
-	font-size: 55px;
-	line-height: 80px;
+	font-size: calc(30px + (55 - 30) * ((100vw - 320px) / (1440 - 320)));
+	line-height: calc(30px + (80 - 30) * ((100vw - 320px) / (1440 - 320)));
 	color: #FF0000;
 }
 
 .page_2 .image_block-1 {
-	width: 600px;
-	height: 670px;
+	width: calc(280px + (600 - 300) * ((100vw - 320px) / (1440 - 320)));
+	height: calc(330px + (670 - 330) * ((100vw - 320px) / (1440 - 320)));
 }
 
 
@@ -61,17 +60,21 @@ img {
 }
 
 .page_2 .image_block-2 {
-	width: 700px;
-	height: 770px;
+	width: calc(280px + (610 - 300) * ((100vw - 320px) / (1440 - 320)));
+	height: calc(330px + (770 - 330) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .page_2 .button_block-2 {
 	display: flex;
-	justify-content: right;
+	align-items: end;
+	justify-content: center;
 }
 
 .page_2 .button {
 	background-color: #3008A1;
 	color: white;
+	margin-bottom: 80px;
 
 }
+
+/*====================================================*/
