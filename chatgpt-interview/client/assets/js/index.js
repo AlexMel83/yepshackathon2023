@@ -20,7 +20,7 @@ const chngeMessage = "Ви змінили налаштування. Якщо г�
 addResponse(0, startText);
 
 
-modelSelect.addEventListener("change", function() {
+modelSelect.addEventListener("change", function () {
     if (modelSelect.value === "whisper") {
         fileInput.style.display = "block";
         // Disable the input field when Whisper is selected
@@ -35,13 +35,13 @@ modelSelect.addEventListener("change", function() {
 
 });
 
-interviewSelect.addEventListener("change", function() {
+interviewSelect.addEventListener("change", function () {
     countQueries = Number(countSelect.value);
 
     addResponse(0, chngeMessage);
 });
 
-countSelect.addEventListener("change", function() {
+countSelect.addEventListener("change", function () {
     countQueries = Number(countSelect.value);
 
     addResponse(0, chngeMessage);
@@ -52,7 +52,7 @@ let isGeneratingResponse = false;
 
 let loadInterval = null;
 
-promptInput.addEventListener('keydown', function(event) {
+promptInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         if (event.ctrlKey || event.shiftKey) {
@@ -76,7 +76,7 @@ function addResponse(selfFlag, prompt) {
     const uniqueId = generateUniqueId();
     const html = `
             <div class="response-container ${selfFlag ? 'my-question' : 'chatgpt-response'}">
-                <img class="avatar-image" src="assets/img/${selfFlag ? 'me' : 'chatgpt'}.png" alt="avatar"/>
+                <img class="avatar-image" src="assets/img/${selfFlag ? 'me' : 'chatgpt'}.svg" alt="avatar"/>
                 <div class="prompt-content" id="${uniqueId}">${prompt}</div>
             </div>
         `
@@ -214,7 +214,7 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
         });
         if (!response.ok) {
             let responseText = await response.text();
-            countQueries = countQueries-1;
+            countQueries = countQueries - 1;
             prevQuestion = responseText.split(":")
             prevQuestion = prevQuestion[prevQuestion.length - 1]
             setRetryResponse(prompt, uniqueId);
@@ -222,7 +222,7 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
             return;
         }
         const responseText = await response.text();
-        countQueries = countQueries-1;
+        countQueries = countQueries - 1;
         prevQuestion = responseText.split(":")
         prevQuestion = prevQuestion[prevQuestion.length - 1]
         if (model === 'image') {
@@ -265,6 +265,6 @@ regenerateResponseButton.addEventListener("click", () => {
     regenerateGPTResult();
 });
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     promptInput.focus();
 });

@@ -45,8 +45,8 @@ select {
 }
 
 #response-list .response-container .avatar-image {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-right: 15px;
 }
 
@@ -63,7 +63,8 @@ select {
 
 #response-list .response-container .prompt-content {
     background: transparent !important;
-    color: white;
+    color: #3008A1;
+    font-size: 22px;
     padding: 0 !important;
 }
 
@@ -84,7 +85,7 @@ select {
 }
 
 .my-question {
-    background-color: rgba(52, 53, 65, 1);
+    background-color: rgb(194, 203, 66);
 }
 
 /* Change background color of the input container */
