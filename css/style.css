@@ -34,14 +34,21 @@
     bottom: 0;
 }
 
-#block-2 .btn-register {
+#block-1 .title-ai {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#block-2 .btn-register,
+#block-1 .btn-ai {
     display: block;
     width: 312px;
     height: 82px;
     flex-shrink: 0;
     border-radius: 16px;
     background: #3008A1;
-    margin: 0 auto;
+    margin: 40px auto;
     color: #FFF;
     font-size: 32px;
     font-weight: 400;
