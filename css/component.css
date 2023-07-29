@@ -31,7 +31,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 1440px;
 }
 
@@ -107,6 +107,11 @@ nav.navbar {
     z-index: 2;
     margin-right: 0 !important;
     margin-left: auto;
+}
+
+header .nav-link {
+    font-size: 22px;
+    margin-left: 13px;
 }
 
 .dropdown-toggle::after {
