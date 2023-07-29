@@ -173,25 +173,6 @@ let move = function () {
 }
 var myInterval = setInterval(move, 2500);
 
-//--------UP --------
-window.onload = function () {
-    var scrolled, timer;
-    document.getElementById('myUP').onclick = function () {
-        scrolled = window.pageYOffset;
-        scrollToTop();
-    }
-    function scrollToTop() {
-        if (scrolled > 0) {
-            window.scrollTo(0, scrolled);
-            scrolled = scrolled - 200;
-            timer = setTimeout(scrollToTop, 50);
-        }
-        else {
-            clearTimeout(timer);
-            window.scrollTo(0, 0);
-        }
-    }
-}
 // Delay the removal of the element to ensure it's available in the DOM
 
 let Inter;
