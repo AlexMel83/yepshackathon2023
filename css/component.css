@@ -412,6 +412,7 @@ footer .link-body-emphasis {
 
     .mob-lang-select.active a.lang-select {
         font-weight: 700;
+        color: red;
     }
 
     .header-btn {
