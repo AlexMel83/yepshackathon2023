@@ -16,9 +16,9 @@
 
 <symbol id="scroll-up" width="42" height="42" viewBox="0 0 42 42" fill="none">
 <g>
-<path d="M33 31L22.4142 20.4142C21.6332 19.6332 20.3668 19.6332 19.5858 20.4142L9 31" stroke="#800000" stroke-width="2" stroke-linecap="round"/>
-<path d="M33 23L22.4142 12.4142C21.6332 11.6332 20.3668 11.6332 19.5858 12.4142L9 23" stroke="#800000" stroke-width="2" stroke-linecap="round"/>
-<rect x="1" y="1" width="40" height="40" rx="7" stroke="#800000" stroke-width="2"/>
+<path d="M33 31L22.4142 20.4142C21.6332 19.6332 20.3668 19.6332 19.5858 20.4142L9 31" stroke="#3008A1" stroke-width="2" stroke-linecap="round"/>
+<path d="M33 23L22.4142 12.4142C21.6332 11.6332 20.3668 11.6332 19.5858 12.4142L9 23" stroke="#3008A1" stroke-width="2" stroke-linecap="round"/>
+<rect x="1" y="1" width="40" height="40" rx="7" stroke="#3008A1" stroke-width="2"/>
 </g>
 </symbol>
 

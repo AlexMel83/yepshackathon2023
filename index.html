@@ -33,62 +33,60 @@
 
 <body>
     <div class="wrap">
-        <div class="container">
-            <header class="header">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
-                    <div class="container-fluid header-menu">
-                        <a href="index.html" title="">
-                            <div class="header-logo"></div>
-                        </a>
-                        <div class="mob-lang-select">
-                            <a class="lang-select" href="/">UA</a>
-                            <div class="vertical"></div>
-                            <a href="/index-en.html">EN</a>
-                        </div>
-                        <div class="header-burger navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation"><span></span></div>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
-                                <div></div>
-                                <li class="nav-item" id="about-link"><a class="nav-link menu-link"
-                                        href="master.html">Про нас</a></li>
-                                <li class="nav-item" id="lern-link"><a class="nav-link menu-link" href="education.html"
-                                        target="_blank">Навчальний розділ</a></li>
-                                <li class="nav-item" id="project-link"><a class="nav-link menu-link"
-                                        href="customers.html" target="_blank">Замовити проект</a></li>
-                                <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
-                                        href="#contacts">Контакти</a></li>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+                <div class="container-fluid header-menu">
+                    <a href="index.html" title="">
+                        <div class="header-logo"></div>
+                    </a>
+                    <div class="mob-lang-select">
+                        <a class="lang-select" href="/">UA</a>
+                        <div class="vertical"></div>
+                        <a href="/index-en.html">EN</a>
+                    </div>
+                    <div class="header-burger navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span></span></div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
+                            <div></div>
+                            <li class="nav-item" id="about-link"><a class="nav-link menu-link" href="master.html">Про
+                                    нас</a></li>
+                            <li class="nav-item" id="lern-link"><a class="nav-link menu-link" href="education.html"
+                                    target="_blank">Навчальний розділ</a></li>
+                            <li class="nav-item" id="project-link"><a class="nav-link menu-link" href="customers.html"
+                                    target="_blank">Замовити проект</a></li>
+                            <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
+                                    href="#contacts">Контакти</a></li>
 
 
-                                <li class="nav-item dropdown" id="navlang">
-                                    <span class="nav-link dropdown-toggle menu-link" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        UA</span>
-                                    <ul class="dropdown-menu lang">
-                                        <li><a class="dropdown-item lang" href="/">UA</a></li>
-                                        <li><a class="dropdown-item lang" href="/index-en.html">EN</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="header-icon-social">
-                                <a href="https://www.facebook.com/profile.php?id=100086510772962"
-                                    class="social-link icon" title="facebook" target="_blank">
-                                    <svg svg="" class="icon">
-                                        <use xlink:href="img/sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.instagram.com/art_studioleonardo/" class="social-link icon"
-                                    title="instagram" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="img/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <li class="nav-item dropdown" id="navlang">
+                                <span class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    UA</span>
+                                <ul class="dropdown-menu lang">
+                                    <li><a class="dropdown-item lang" href="/">UA</a></li>
+                                    <li><a class="dropdown-item lang" href="/index-en.html">EN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="header-icon-social">
+                            <a href="#" class="social-link icon" title="facebook" target="_blank">
+                                <svg svg="" class="icon">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link icon" title="instagram" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
             <div id="block-1">
                 <h3>Шукаєш свою першу роботу в IT?</h3>
                 <h3>Досвіду немає, портфоліо та резюме викликає питання?</h3>
@@ -281,11 +279,16 @@
                                 </svg></a></li>
                     </ul>
                 </div>
+                <svg class="scroll-up">
+                    <use xlink:href="img/sprite.svg#scroll-up"></use>
+                </svg>
             </footer>
         </div>
     </div>
-    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/component.js"></script>
+    <script src="js/script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>

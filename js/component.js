@@ -80,7 +80,7 @@ let navLangSelect = `UA</span>
                     <li><a class="dropdown-item lang" href=${hrefLangEN()}>EN</a></li>`;
 let navOrderLesson = "Замовити урок";
 
-drawHeader();
+// drawHeader();
 
 function drawHeader() {
     if (!isIndex && lengthPath > 1) {
@@ -221,3 +221,89 @@ function drawHeader() {
                         </div></div></div>
                     </nav>`;
 }
+
+//variables ScrolUp btn
+const offset = 100;
+const scrollUp = document.querySelector(".scroll-up");
+const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+/* Code scrolUp btn */
+if (scrollUp) {
+    window.addEventListener("scroll", () => {
+        if (getTop() > offset) {
+            scrollUp.classList.add("scroll-up-active");
+        } else {
+            scrollUp.classList.remove("scroll-up-active");
+        }
+    });
+    scrollUp.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+}
+
+/* function for lock body and forbid scrol page*/
+function bodyLock() {
+    const lockPaddingValue = window.innerWidth - body.offsetWidth + "px";
+
+    if (lockPadding.length > 0) {
+        for (let i = 0; i < lockPadding.length; i++) {
+            const el = lockPadding[i];
+            el.style.paddingRight = lockPaddingValue;
+        }
+    }
+
+    body.classList.add("lock");
+    body.style.paddingRight = lockPaddingValue;
+    if (menuClose) {
+        unlock = false;
+        setTimeout(function () {
+            unlock = true;
+        }, timeout);
+    }
+}
+
+function bodyUnLock() {
+    setTimeout(function () {
+        for (let i = 0; i < lockPadding.length; i++) {
+            const el = lockPadding[i];
+            el.style.paddingRight = "0px";
+        }
+        if (menuClose) {
+            body.classList.remove("lock");
+            body.style.paddingRight = "0px";
+        }
+    }, timeout);
+    if (!menuClose) {
+        unlock = false;
+        setTimeout(() => (unlock = true), timeout);
+    }
+}
+
+let unlock = true;
+let menuClose = true;
+const timeout = 800;
+/* this code added toggleClass to btn for work burger-menu and block scrolling*/
+$(".header-burger").click(function () {
+    $(
+        ".header-burger, .header-menu, .header-logo, .mob-lang-select"
+    ).toggleClass("active");
+});
+
+$("#navbarSupportedContent").on("hidden.bs.collapse", function () {
+    $("body").removeClass("no_scrolling");
+});
+$("#navbarSupportedContent").on("show.bs.collapse", function () {
+    $("body").addClass("no_scrolling");
+});
+$(".navbar-nav>li>a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+});
+$(".dropdown-menu>li>a, .nav-item>a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+    $(".container-fluid").removeClass("active");
+    $(
+        ".header-burger, .header-menu, .header-logo, .mob-lang-select"
+    ).removeClass("active");
+});
