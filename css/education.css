@@ -107,6 +107,10 @@ li {
 
 .page_2 .button_block-2 .button a {
 	color: white;
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*====================================================*/
