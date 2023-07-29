@@ -89,6 +89,11 @@ function drawHeader() {
 
     if (document.title == 'ChatGPT Front-end') {
         abutuslink = 'https://careerboosters.fromavdiivka.city/index.html', navlernlink = 'https://careerboosters.fromavdiivka.city/education.html', navorderlink = 'https://careerboosters.fromavdiivka.city/customers.html', ansverslink = 'https://careerboosters.fromavdiivka.city/index.html#block-3';
+        if (langEn) {
+            abutuslink = 'https://careerboosters.fromavdiivka.city/index-en.html', navlernlink = 'https://careerboosters.fromavdiivka.city/education-en.html', navorderlink = 'https://careerboosters.fromavdiivka.city/customers-en.html', ansverslink = 'https://careerboosters.fromavdiivka.city/index-en.html#block-3';
+
+        }
+
         header.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary menu">
         <div class="container-fluid header-menu">
             <a href="https://careerboosters.fromavdiivka.city/index.html" title="">
