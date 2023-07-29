@@ -48,7 +48,7 @@ function hrefLangEN() {
                 hrefEn = hrefEn.slice(0, placeHtml);
                 hrefEn = hrefEn.concat("-en.html");
             } else {
-                if (lengthPath == 1) {
+                if (lengthPath == 1 || !isIndex) {
                     hrefEn = hrefEn.concat("index-en.html");
                 } else {
                     hrefEn = hrefEn.concat("-en.html");
@@ -87,7 +87,56 @@ function drawHeader() {
                 <a class="lang-select" href=${hrefLangEN()}>EN</a>`;
     }
 
-    header.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+    if (document.title == 'ChatGPT Front-end') {
+        abutuslink = '../../index.html', navlernlink = '../../education.html', navorderlink = '../../customers.html', ansverslink = '../../index.html#block-3';
+        header.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+        <div class="container-fluid header-menu">
+            <a href="../../index.html" title="">
+                <div class="header-logo"></div>
+            </a>
+            <div class="mob-lang-select">
+                ${mobLangSelect}
+            </div>
+            <div class="header-burger navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation"><span></span></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
+                    <div></div>
+                    <li class="nav-item" id="about-link"><a class="nav-link menu-link" href="${abutuslink}">${aboutus}</a></li>
+                    <li class="nav-item" id="lern-link"><a class="nav-link menu-link" href="${navlernlink}"
+                            >${navlern}</a></li>
+                    <li class="nav-item" id="project-link"><a class="nav-link menu-link" href="${navorderlink}"
+                            >${navorder}</a></li>
+                    <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
+                            href="${ansverslink}">${ansvers}</a></li>
+    
+    
+                    <li class="nav-item dropdown" id="navlang">
+                        <span class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ${navLangSelect}</ul>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header-icon-social">
+                    <a href="#" class="social-link icon" title="facebook" target="_blank">
+                        <svg svg="" class="icon">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link icon" title="instagram" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>`;
+
+    } else {
+        header.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary menu">
     <div class="container-fluid header-menu">
         <a href="index.html" title="">
             <div class="header-logo"></div>
@@ -132,6 +181,7 @@ function drawHeader() {
         </div>
     </div>
 </nav>`;
+    }
 }
 
 function drawFooter() {
@@ -140,7 +190,9 @@ function drawFooter() {
     if (langEn) {
         footerdevelop = '© Developed by students of Vinnytsia IT Academy 2023', developerlink = 'developer-en.html';
     }
-
+    if (document.title == 'ChatGPT Front-end') {
+        developerlink = '../../developer.html'
+    }
     footer.innerHTML = `<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
             <symbol id="bootstrap" viewBox="0 0 118 94">
