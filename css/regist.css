@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.regist__container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+
+}
+
+.regist__box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    padding: 20px; /* Добавляем небольшой внутренний отступ, чтобы тень была видна */
+    border-radius: 12px;
+}
+
+.regist__box input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+}
+
+.regist__box button {
+    padding: 10px;
+}
+
+.btn__regist {
+    color: white;
+    border-radius: 12px;
+    width: 250px;
+    background-color: #1976d2;;
+}
+
+.regist__text {
+    text-align: center;
+}

@@ -39,6 +39,7 @@ li {
 	margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
 	margin-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
 	margin-left: calc(10px + (50 - 10) * ((100vw - 320px) / (1440 - 320)));
+
 	border-bottom: 2px solid rgba(0, 0, 0, 0.316);
 }
 
@@ -82,7 +83,6 @@ li {
 	text-transform: uppercase;
 	line-height: calc(30px + (63 - 30) * ((100vw - 320px) / (1440 - 320)));
 	font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320)));
-
 }
 
 .page_2 .block-2 .col-4 {
