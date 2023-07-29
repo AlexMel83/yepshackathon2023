@@ -1015,6 +1015,7 @@
         margin-left: 45px;
         opacity: 0.5;
         cursor: pointer;
+        background-image: url(../img/UliaKozachko.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -1028,8 +1029,9 @@
     }
 
     .dev-2 {
-        margin-top: 15px;
-        margin-left: 569px;
+        background-image: url(../img/OlexMeleshko.jpg);
+        margin-top: 179px;
+        margin-left: 223px;
         opacity: 0.5;
         cursor: pointer;
         background-size: cover;
@@ -1050,6 +1052,7 @@
         margin-left: 238px;
         opacity: 0.5;
         cursor: pointer;
+        background-image: url(../img/MaksMironov.PNG);
         background-size: cover;
         border-radius: 50%;
     }
@@ -1067,6 +1070,7 @@
         margin-left: 390px;
         opacity: 0.5;
         cursor: pointer;
+        background-image: url(../img/KseniaBartash.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -1084,6 +1088,7 @@
         margin-left: 44px;
         opacity: 0.5;
         cursor: pointer;
+        background-image: url(../img/AnastasiaVoloshyna.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -1102,6 +1107,7 @@
         margin-left: 406px;
         opacity: 0.5;
         cursor: pointer;
+        background-image: url(../img/DenysYatsik.jpg);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2036,10 +2042,11 @@
     }
 
     .dev-4 {
-        margin-top: 62px;
+        margin-top: 197px;
         margin-left: 765px;
         opacity: 0.5;
         cursor: pointer;
+        background-image: url(../img/MaksMironov.PNG);
         background-size: cover;
         border-radius: 50%;
     }
@@ -2151,8 +2158,8 @@
         border: none;
         position: absolute;
         opacity: 1 !important;
-        margin-top: 42px;
-        margin-left: 745px;
+        margin-top: 197px;
+        margin-left: 765px;
     }
 
     .dev-5.-active {
@@ -2342,8 +2349,8 @@
     }
 
     .dev_Team-rec-4 {
-        margin-top: 42px;
-        margin-left: 745px;
+        margin-top: 197px;
+        margin-left: 765px;
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s;
