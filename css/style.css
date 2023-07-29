@@ -54,7 +54,8 @@
     font-weight: 400;
 }
 
-.btn__regist {
+.btn-register {
+    margin-left: 580px;
     color: white;
 }
 

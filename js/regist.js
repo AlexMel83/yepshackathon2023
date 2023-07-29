@@ -1,31 +1,21 @@
-function validateUsername(username) {
-    const usernameRegex = /^[a-zA-Z0-9_]{2,15}$/;
-    return usernameRegex.test(username);
-}
+const validateUsername = (username) => /^[a-zA-Z0-9_]{2,15}$/.test(username);
 
-function validateEmail(email) {
+const validateEmail = (email) => {
     if (email.length > 30) {
         return false;
     }
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
+const validatePassword = (password) => password.length >= 6 && password.length <= 12;
 
-function validatePassword(password) {
-    if (password.length > 12) {
-        return false;
-    }
-    return password.length >= 6;
-}
-
-function saveUserData() {
+const saveUserData = () => {
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
     if (!username || !email || !password) {
-        alert('Заполните все поля');
+        alert("Заповніть усі поля.");
         return;
     }
 
@@ -45,13 +35,28 @@ function saveUserData() {
     }
 
     const userData = {
-        username: username,
-        email: email,
-        password: password
+        username,
+        email,
+        password,
     };
 
     const userDataJSON = JSON.stringify(userData);
     localStorage.setItem('userData', userDataJSON);
 
+    console.log("username:", username);
+
+    // Перенаправлення на основну сторінку після успішної реєстрації
     window.location.href = '/index.html';
-}
+};
+
+// Заповнення полів вводу збереженими даними після завантаження сторінки
+document.addEventListener('DOMContentLoaded', () => {
+    const LS = localStorage;
+    
+    if (LS.getItem('userData')) {
+        const userData = JSON.parse(LS.getItem('userData'));
+        document.getElementById('username').value = userData.username;
+        document.getElementById('email').value = userData.email;
+        document.getElementById('password').value = userData.password;
+    }
+});
