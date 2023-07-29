@@ -87,44 +87,21 @@
                 </nav>
             </header>
 
-            <div id="response-list">
-            </div>
+            <div id="response-list"></div>
             <div id="bottom-container">
                 <div id="regenerate-button-container">
-                    <button id="regenerate-response-button">
-                        Regenerate Response
-                    </button>
+                    <button id="regenerate-response-button">Regenerate Response</button>
                 </div>
                 <div id="model-select-container">
-                    <label for="model-select">Оберіть модель:</label>
+                    <label for="model-select">Оберіть формат вводу резюме:</label>
                     <select id="model-select">
-                        <option value="chatgpt" selected>ChatGPT (Improved version of GPT-3 and can understand as well
-                            as
-                            generate natural language or code)</option>
-                        <option value="gpt">GPT-3 (Understand and generate natural language )</option>
+                        <option value="chatgpt" selected>ввод резюме текстом в поле</option>
                         <!-- <option value="image">Create Image (Create AI image using DALL·E models)</option> -->
-                        <option value="whisper">Whisper(AI speech recognition model)</option>
-                    </select>
-                </div>
-                <div id="interview-select-container">
-                    <label for="interview-select">Оберіть тему інтервью:</label>
-                    <select id="interview-select">
-                        <option value="Java Script" selected>Java Script</option>
-                        <option value="Project Management">Project Management</option>
-                        <option value="QA тестувальник">QA тестувальник</option>
-                    </select>
-                </div>
-                <div id="count-questions-select">
-                    <label for="count-select">Оберіть кількість питань:</label>
-                    <select id="count-select">
-                        <option value=5 selected>5</option>
-                        <option value=10>10</option>
-                        <option value=20>20</option>
+                        <option value="textfile">завантажити файл резюме</option>
                     </select>
                 </div>
                 <div id="input-container">
-                    <input type="file" id="whisper-file" accept=".mp3,.mp4,.mpeg,.mpga,.m4a,.wav,.webm"
-                        style="display:none;">
+                    <input type="file" id="text-file" accept=".txt,.doc,.docx,.pdf" style="display:none;">
                     <div id="prompt-input" contentEditable></div>
                     <button id="submit-button"></button>
                 </div>
