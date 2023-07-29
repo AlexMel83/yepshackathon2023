@@ -162,11 +162,11 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
     let prompt = _promptToRetry ?? promptInput.textContent;
     const origPromt = prompt;
     if (prompt.trim() === "#start" || !prevQuestion) {
-        prompt = `Ти проводиш співбесіду. Задай одне питання по темі ${interviewSelect.value}.`;
+        prompt = `Ти проводиш співбесіду. Задай обрану питання по темі ${interviewSelect.value}.`;
     } else if (countQueries > 0) {
-        prompt = `Оціни відповідиь '${prompt.trim()}' на питання по 100 бальній системі '${prevQuestion.trim()}'. 
-        Якщо треба доповни відповідь або дай правильну. 
-        Задавай питання після відповіді ${interviewSelect.value}`;
+        prompt = `Оціни відповідь '${prompt.trim()}' на питання по 100 бальній системі '${prevQuestion.trim()}'. 
+     
+        Задавай слідуюче питання після відповіді на попереднє ${interviewSelect.value}`;
     } else {
         addResponse(0, startText);
         return;
