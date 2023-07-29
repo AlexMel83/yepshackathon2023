@@ -153,6 +153,7 @@ footer .border-top {
 .button-header .btn-register {
     background-color: #3008A1;
     border: 2px solid #3008A1;
+    border-radius: 20px;
     width: 312px;
     height: 82px;
     font-size: 32px;
