@@ -64,7 +64,7 @@ function hrefLangEN() {
 drawHeader();
 
 function drawHeader() {
-    let aboutus = 'Про нас', navlern = 'Навчальний розділ';
+    let aboutus = 'Про нас', navlern = 'Навчальний розділ', navorder = 'Замовити проект', navcontact = 'Контакти';
 
 
     if (!isIndex && lengthPath > 1) {
@@ -99,11 +99,11 @@ function drawHeader() {
                 <div></div>
                 <li class="nav-item" id="about-link"><a class="nav-link menu-link" href="master.html">${aboutus}</a></li>
                 <li class="nav-item" id="lern-link"><a class="nav-link menu-link" href="education.html"
-                        target="_blank">${navlern}</a></li>
+                        >${navlern}</a></li>
                 <li class="nav-item" id="project-link"><a class="nav-link menu-link" href="customers.html"
-                        target="_blank">Замовити проект</a></li>
+                        >${navorder}</a></li>
                 <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
-                        href="#contacts">Контакти</a></li>
+                        href="#contacts">${navcontact}</a></li>
 
 
                 <li class="nav-item dropdown" id="navlang">
