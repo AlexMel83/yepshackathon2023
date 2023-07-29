@@ -66,13 +66,11 @@ drawHeader();
 function drawHeader() {
     let aboutus = 'Про нас', navlern = 'Навчальний розділ', navorder = 'Замовити проект', navcontact = 'Контакти';
 
-
+    if (langEn) {
+        aboutus = 'About us', navlern = 'Study section', navorder = 'Order a project', navcontact = 'Contacts';
+    }
     if (!isIndex && lengthPath > 1) {
-        if (langEn) {
 
-        } else {
-
-        }
     } else {
         if (langEn) {
 
