@@ -72,10 +72,12 @@ function drawHeader() {
     let mobLangSelect = `<a class="lang-select" href=${hrefLangUA()}>UA</a>
                     <div class="vertical"></div>
                 <a href=${hrefLangEN()}>EN</a>`;
-    let aboutus = 'Про нас', navlern = 'Навчальний розділ', navorder = 'Замовити проект', ansvers = 'Відповіді';
+    let aboutus = 'Про нас', abutuslink = 'index.html', navlern = 'Навчальний розділ', navlernlink = 'education.html',
+        navorder = 'Замовити проект', navorderlink = 'customers.html', ansvers = 'Відповіді', ansverslink = 'index.html#block-3';
 
     if (langEn) {
-        aboutus = 'About us', navlern = 'Study section', navorder = 'Order a project', navcontact = 'Ansvers';
+        aboutus = 'About us', abutuslink = 'index-en.html', navlern = 'Study section', navlernlink = 'education-en.html',
+            navorder = 'Order a project', navorderlink = 'customers-en.html', ansvers = 'Ansvers', ansverslink = 'index.html-en#block-3';
         navLangSelect = `EN</span>
                     <ul class="dropdown-menu lang">
                     <li><a class="dropdown-item lang" href=${hrefLangUA()}>UA</a></li>
@@ -99,13 +101,13 @@ function drawHeader() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
                 <div></div>
-                <li class="nav-item" id="about-link"><a class="nav-link menu-link" href="index.html">${aboutus}</a></li>
-                <li class="nav-item" id="lern-link"><a class="nav-link menu-link" href="education.html"
+                <li class="nav-item" id="about-link"><a class="nav-link menu-link" href="${abutuslink}">${aboutus}</a></li>
+                <li class="nav-item" id="lern-link"><a class="nav-link menu-link" href="${navlernlink}"
                         >${navlern}</a></li>
-                <li class="nav-item" id="project-link"><a class="nav-link menu-link" href="customers.html"
+                <li class="nav-item" id="project-link"><a class="nav-link menu-link" href="${navorderlink}"
                         >${navorder}</a></li>
                 <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
-                        href="index.html#block-3">${ansvers}</a></li>
+                        href="${ansverslink}">${ansvers}</a></li>
 
 
                 <li class="nav-item dropdown" id="navlang">
@@ -133,10 +135,10 @@ function drawHeader() {
 }
 
 function drawFooter() {
-    let footerdevelop = '© Розроблено студентами Вінницької ІТ-академії 2023';
+    let footerdevelop = '© Розроблено студентами Вінницької ІТ-академії 2023', developerlink = 'developer.html';
 
     if (langEn) {
-        footerdevelop = '© Developed by students of Vinnytsia IT Academy 2023';
+        footerdevelop = '© Developed by students of Vinnytsia IT Academy 2023', developerlink = 'developer-en.html';
     }
 
     footer.innerHTML = `<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
@@ -163,7 +165,7 @@ function drawFooter() {
                 </path>
             </symbol>
         </svg>
-        <a href="developer.html" type="button">
+        <a href="${developerlink}" type="button">
             <p>${footerdevelop}</p>
         </a>
         <ul class="list-unstyled d-flex">
