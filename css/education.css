@@ -36,7 +36,10 @@ li {
 	font-size: 18px;
 	line-height: 30px;
 	color: #320941;
-	margin: 100px 0px 100px 50px;
+	margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
+	margin-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
+	margin-left: calc(10px + (50 - 10) * ((100vw - 320px) / (1440 - 320)));
+
 	border-bottom: 2px solid rgba(0, 0, 0, 0.316);
 }
 
@@ -52,14 +55,19 @@ li {
 	height: calc(230px + (570 - 230) * ((100vw - 320px) / (1440 - 320)));
 }
 
+.page_2 .first_steps .title-list {
+	font-size: calc(24px + (55 - 24) * ((100vw - 320px) / (1440 - 320)));
+	line-height: calc(30px + (80 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+
 .page_2 .first_steps .tag-list-text {
-	font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1440 - 320)));
 	font-weight: 600;
-	line-height: calc(15px + (50 - 15) * ((100vw - 320px) / (1440 - 320)));
+	line-height: calc(32px + (50 - 32) * ((100vw - 320px) / (1440 - 320)));
 	color: #3008A1;
 	margin-bottom: 100px;
-	margin-left: calc(15px + (100 - 20) * ((100vw - 320px) / (1440 - 320)));
-	margin-right: calc(15px + (100 - 20) * ((100vw - 320px) / (1440 - 320)));
+	margin-left: calc(10px + (100 - 10) * ((100vw - 320px) / (1440 - 320)));
+	margin-right: calc(10px + (100 - 10) * ((100vw - 320px) / (1440 - 320)));
 }
 
 
@@ -74,7 +82,7 @@ li {
 	margin: 20px 20px 50px 20px;
 	text-transform: uppercase;
 	line-height: calc(30px + (63 - 30) * ((100vw - 320px) / (1440 - 320)));
-
+	font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .page_2 .block-2 .col-4 {
@@ -93,6 +101,10 @@ li {
 	color: white;
 	margin-bottom: 80px;
 
+}
+
+.page_2 .button_block-2 .button a {
+	color: white;
 }
 
 /*====================================================*/
