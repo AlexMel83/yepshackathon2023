@@ -36,7 +36,6 @@ img {
 .row {}
 
 .page_3 .block_services {
-	margin: 50px 0 0 0;
 	border-bottom: 2px solid black;
 }
 
@@ -47,23 +46,28 @@ img {
 	line-height: calc(30px + (95 - 30) * ((100vw - 320px) / (1440 - 320)));
 	font-weight: 700;
 	justify-content: center;
-	margin: 50px 0;
+	margin-top: calc(30px + (50 - 30) * ((100vw - 320px) / (1440 - 320)));
+	margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1440 - 320)));
+	margin-left: calc(10px + (50 - 10) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .page_3 .text_item {
 
 	font-weight: 400;
-	font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1440 - 320)));
 	line-height: calc(30px + (47 - 30) * ((100vw - 320px) / (1440 - 320)));
 	color: black;
+	margin-left: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .page_3 .image_item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: calc(270px + (620 - 310) * ((100vw - 320px) / (1440 - 320)));
+	width: calc(270px + (590 - 310) * ((100vw - 320px) / (1440 - 320)));
 	height: calc(320px + (530 - 320) * ((100vw - 320px) / (1440 - 320)));
+	margin-top: calc(0px + (-80 + 50) * ((100vw - 320px) / (1440 - 320)));
+	;
 }
 
 .page_3 .button_services {
@@ -82,8 +86,6 @@ img {
 
 .page_3 .block-questions {
 	background-color: white;
-	margin-bottom: 80px;
-
 }
 
 .page_3 .question_text {
