@@ -10,6 +10,20 @@ select {
     text-overflow: ellipsis;
 }
 
+.m_logo_IT {}
+
+.Text_1 {
+    color: white;
+    text-align: center
+}
+
+.b_1 {
+    font-size: large
+}
+
+
+
+
 /* Remove border color from the response list container */
 #response-list {
     border: none;
@@ -45,8 +59,8 @@ select {
 }
 
 #response-list .response-container .avatar-image {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-right: 15px;
 }
 
@@ -63,7 +77,8 @@ select {
 
 #response-list .response-container .prompt-content {
     background: transparent !important;
-    color: white;
+    color: #3008A1;
+    font-size: 22px;
     padding: 0 !important;
 }
 
@@ -84,7 +99,7 @@ select {
 }
 
 .my-question {
-    background-color: rgba(52, 53, 65, 1);
+    background-color: rgb(194, 203, 66);
 }
 
 /* Change background color of the input container */
@@ -104,8 +119,9 @@ select {
     flex-grow: 1;
     padding: 10px;
     border-radius: 5px;
+    font-size: 22px;
     min-height: 20px;
-    color: white;
+    color: #3008A1;
     overflow: auto;
 }
 
@@ -154,18 +170,18 @@ select {
 }
 
 #model-select-container {
-    color: white;
+    color: #3008A1;
 }
 
 #model-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #3008A1;
 }
 
 #model-select-container select option:not(:checked) {
-    background: rgba(32, 33, 35, .8);
+    background: rgba(177, 178, 180, 0.8);
 }
 
 #model-select-container select option {
@@ -174,18 +190,18 @@ select {
 
 
 #interview-select-container {
-    color: white;
+    color: #3008A1;
 }
 
 #interview-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #3008A1;
 }
 
 #interview-select-container select option:not(:checked) {
-    background: rgba(32, 33, 35, .8);
+    background: rgba(177, 178, 180, 0.8);
 }
 
 #interview-select-container select option {
@@ -194,18 +210,18 @@ select {
 
 
 #count-questions-select {
-    color: white;
+    color: #3008A1;
 }
 
 #count-questions-select select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #3008A1;
 }
 
 #count-questions-select select option:not(:checked) {
-    background: rgba(32, 33, 35, .8);
+    background: rgba(177, 178, 180, 0.8);
 }
 
 #count-questions-select select option {

@@ -212,9 +212,7 @@ li>a.dropdown-item.lang {
 }
 
 .caption,
-.sub-menu-link,
-input,
-label {
+.sub-menu-link {
     font-family: "Open Sans";
     font-weight: 400
 }

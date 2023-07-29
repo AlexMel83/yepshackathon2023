@@ -14,13 +14,13 @@ const fileInput = document.getElementById("whisper-file");
 
 let prevQuestion = "";
 let countQueries = Number(countSelect.value);
-const startText = "Привіт, тут ти можешь пройти тестову співбесіду, " +
+const startText = "Тисни тут та пройди тестову співбесіду, " +
     "для початку обери напрям за яким буде проходити співбесіда та кількість питань. І напишіть в чат #start щоб почати";
 const chngeMessage = "Ви змінили налаштування. Якщо готові напишить в чат #start щоб почати";
 addResponse(0, startText);
 
 
-modelSelect.addEventListener("change", function() {
+modelSelect.addEventListener("change", function () {
     if (modelSelect.value === "whisper") {
         fileInput.style.display = "block";
         // Disable the input field when Whisper is selected
@@ -35,13 +35,13 @@ modelSelect.addEventListener("change", function() {
 
 });
 
-interviewSelect.addEventListener("change", function() {
+interviewSelect.addEventListener("change", function () {
     countQueries = Number(countSelect.value);
 
     addResponse(0, chngeMessage);
 });
 
-countSelect.addEventListener("change", function() {
+countSelect.addEventListener("change", function () {
     countQueries = Number(countSelect.value);
 
     addResponse(0, chngeMessage);
@@ -52,7 +52,7 @@ let isGeneratingResponse = false;
 
 let loadInterval = null;
 
-promptInput.addEventListener('keydown', function(event) {
+promptInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         if (event.ctrlKey || event.shiftKey) {
@@ -76,7 +76,7 @@ function addResponse(selfFlag, prompt) {
     const uniqueId = generateUniqueId();
     const html = `
             <div class="response-container ${selfFlag ? 'my-question' : 'chatgpt-response'}">
-                <img class="avatar-image" src="assets/img/${selfFlag ? 'me' : 'chatgpt'}.png" alt="avatar"/>
+                <img class="avatar-image" src="assets/img/${selfFlag ? 'me' : 'chatgpt'}.svg" alt="avatar"/>
                 <div class="prompt-content" id="${uniqueId}">${prompt}</div>
             </div>
         `
@@ -164,9 +164,9 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
     if (prompt.trim() === "#start" || !prevQuestion) {
         prompt = `Ти проводиш співбесіду. Задай одне питання по темі ${interviewSelect.value}.`;
     } else if (countQueries > 0) {
-        prompt = `Оціни відповідиь '${prompt.trim()}' на питання '${prevQuestion.trim()}'. 
+        prompt = `Оціни відповідиь '${prompt.trim()}' на питання по 100 бальній системі '${prevQuestion.trim()}'. 
         Якщо треба доповни відповідь або дай правильну. 
-        Після цього задай одне нове питання по темі ${interviewSelect.value}`;
+        Задавай питання після відповіді ${interviewSelect.value}`;
     } else {
         addResponse(0, startText);
         return;
@@ -214,7 +214,7 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
         });
         if (!response.ok) {
             let responseText = await response.text();
-            countQueries = countQueries-1;
+            countQueries = countQueries - 1;
             prevQuestion = responseText.split(":")
             prevQuestion = prevQuestion[prevQuestion.length - 1]
             setRetryResponse(prompt, uniqueId);
@@ -222,7 +222,7 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
             return;
         }
         const responseText = await response.text();
-        countQueries = countQueries-1;
+        countQueries = countQueries - 1;
         prevQuestion = responseText.split(":")
         prevQuestion = prevQuestion[prevQuestion.length - 1]
         if (model === 'image') {
@@ -265,6 +265,6 @@ regenerateResponseButton.addEventListener("click", () => {
     regenerateGPTResult();
 });
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     promptInput.focus();
 });
