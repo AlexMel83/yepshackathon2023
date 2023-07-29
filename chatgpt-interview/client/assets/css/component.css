@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --bg-color: #eefbea;
+    --color-black: #0b0b0b;
+    --color-green-600: #47a824;
+    --color-green-500: #2c6716;
+    --color-green-400: #9be481;
+    --color-green-300: #98d198;
+    --color-green-100: #def6d5;
+    --color-green-50: #eefbea;
+    --color-borderaux-500: #800000;
+    --color-borderaux-300: #a47e7e;
+    --color-teacher-bg: #e7dfc8;
+    --color-yellow: #ffcc46;
+    --color-red: #b60c0c;
+    /* text */
+    --color-blue-text: #3008A1;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-style: normal;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    color: #3008A1;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 120px;
+}
+
+h2 {
+    color: #3008A1;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #3008A1;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 30px
+}
+
+.wrap {
+    padding: 20px 0;
+}
+
+/* navbar */
+
+.header-logo {
+    z-index: 5;
+    background-image: url(../img/logo_transparent.png);
+    background-size: cover;
+    width: 190px;
+    height: 40px;
+}
+
+#navlang {
+    margin-left: 30px;
+}
+
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.menu-list {
+    z-index: 2;
+    margin-right: 0 !important;
+    margin-left: auto;
+}
+
+.dropdown-toggle::after {
+    margin-left: 5px;
+    border: solid #0b0b0b;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav-link:hover {
+    color: var(--color-borderaux-500) !important;
+}
+
+.navbar-nav .nav-link.show {
+    color: var(--color-borderaux-500) !important;
+
+    &:after {
+        border: solid var(--color-borderaux-500);
+        border-width: 2px 0 0 2px;
+        position: relative;
+        top: 5px;
+    }
+}
+
+.dropdown-menu {
+    background-color: var(--color-green-100);
+    border: none;
+    padding: 0;
+}
+
+.dropdown-menu.lang.show {
+    min-width: 88px;
+}
+
+a.dropdown-item {
+    padding: 11px 10px;
+    border-bottom: solid 1px #000;
+    display: block;
+    width: 217px;
+}
+
+li>a.dropdown-item.lang {
+    width: 88px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+    background-color: #98D198;
+    font-weight: 700;
+    color: #000;
+}
+
+.header {
+    min-height: 86px;
+}
+
+.header-body {
+    height: 86px;
+    align-items: start;
+}
+
+.menu-list>li:hover .sub-menu-list {
+    display: block
+}
+
+.menu-link {
+    color: #3008A1;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+&:after {
+    border: solid var(--color-borderaux-500);
+    border-width: 2px 0 0 2px;
+    position: relative;
+    top: 5px;
+}
+
+.sub-menu-list {
+    display: none;
+    position: absolute;
+    left: -36px;
+    top: 12px;
+    padding-top: 22px;
+    z-index: 100;
+}
+
+.sub-menu-link {
+    display: inline-block;
+    padding: 12px;
+    width: 212px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-black)
+}
+
+.sub-menu-list>li {
+    background-color: var(--color-green-100);
+    border-bottom: 1px solid #000
+}
+
+.sub-menu-list>li:hover {
+    background: var(--color-green-300)
+}
+
+.sub-menu-link:active {
+    font-weight: 700;
+    padding: 12px 5px
+}
+
+.caption,
+.sub-menu-link {
+    font-family: "Open Sans";
+    font-weight: 400
+}
+
+.mob-lang-select {
+    display: none;
+}
+
+.icon-social {
+    display: flex;
+    margin: 20px;
+    justify-content: center
+}
+
+.header-icon-social {
+    display: none
+}
+
+.icon {
+    display: block;
+    width: 42px;
+    height: 42px;
+    color: var(--color-black);
+    fill: var(--color-black)
+}
+
+.icon:hover {
+    color: var(--color-borderaux-500)
+}
+
+footer a {
+    font-size: 22px;
+    color: #3008A1;
+}
+
+footer .link-body-emphasis {
+    fill: #3008A1;
+}

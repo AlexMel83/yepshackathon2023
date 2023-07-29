@@ -1,0 +1,98 @@
+/*Обнулення*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+
+/*======================= EDUCATION =========================*/
+
+/*----------------block-1--------------*/
+.page_2 {
+	background-color: #E3E6EE;
+}
+
+.page_2 .block-1 {
+	font-weight: 400;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.316);
+}
+
+.page_2 .block-1 .text_block-1 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #320941;
+	margin: 100px 0px 100px 50px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.316);
+}
+
+.page_2 .title_block-1 {
+	font-size: calc(30px + (55 - 30) * ((100vw - 320px) / (1440 - 320)));
+	line-height: calc(30px + (80 - 30) * ((100vw - 320px) / (1440 - 320)));
+	color: #FF0000;
+	margin-bottom: 100px;
+}
+
+.page_2 .image_block-1 {
+	width: calc(280px + (600 - 280) * ((100vw - 320px) / (1440 - 320)));
+	height: calc(230px + (570 - 230) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.page_2 .first_steps .tag-list-text {
+	font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1440 - 320)));
+	font-weight: 600;
+	line-height: calc(15px + (50 - 15) * ((100vw - 320px) / (1440 - 320)));
+	color: #3008A1;
+	margin-bottom: 100px;
+	margin-left: calc(15px + (100 - 20) * ((100vw - 320px) / (1440 - 320)));
+	margin-right: calc(15px + (100 - 20) * ((100vw - 320px) / (1440 - 320)));
+}
+
+
+/*----------------block-2--------------*/
+
+.page_2 .image_block-2 {
+	width: calc(280px + (510 - 280) * ((100vw - 320px) / (1440 - 320)));
+	height: calc(230px + (570 - 230) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.page_2 .block-2 h2 {
+	margin: 20px 20px 50px 20px;
+	text-transform: uppercase;
+	line-height: calc(30px + (63 - 30) * ((100vw - 320px) / (1440 - 320)));
+
+}
+
+.page_2 .block-2 .col-4 {
+	width: 100%;
+
+}
+
+.page_2 .button_block-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page_2 .button {
+	background-color: #3008A1;
+	color: white;
+	margin-bottom: 80px;
+
+}
+
+/*====================================================*/
