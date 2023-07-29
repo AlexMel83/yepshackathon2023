@@ -145,6 +145,7 @@ nav.navbar {
 
 a.dropdown-item {
     padding: 11px 10px;
+    font-family: "Roboto";
     border-bottom: solid 1px #000;
     display: block;
     width: 217px;
@@ -157,6 +158,7 @@ li>a.dropdown-item.lang {
 .dropdown-item:hover,
 .dropdown-item:active {
     background-color: var(--color-blue-300);
+    font-family: "Roboto";
     font-weight: 700;
     color: #000;
 }
@@ -175,6 +177,7 @@ li>a.dropdown-item.lang {
 }
 
 .menu-link {
+    font-family: "Roboto";
     color: #3008A1;
     font-size: 26px;
     font-style: normal;
@@ -217,6 +220,7 @@ li>a.dropdown-item.lang {
 }
 
 .sub-menu-link:active {
+    font-family: "Roboto";
     font-weight: 700;
     padding: 12px 5px
 }
