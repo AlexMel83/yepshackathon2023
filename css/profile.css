@@ -1,0 +1,38 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.profile__box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.profile__container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.btn__profile {
+    align-items: center;
+    background-color: #1976d2;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
