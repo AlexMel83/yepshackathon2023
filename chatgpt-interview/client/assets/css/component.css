@@ -82,7 +82,7 @@ h4 {
 }
 
 /* navbar */
-.collapse div a img {
+.header-menu div a img {
     width: 40px;
     height: 40px;
     margin-left: 10px;
@@ -331,7 +331,7 @@ footer .link-body-emphasis {
     }
 
     /* navbar */
-    .collapse div a img {
+    .header-menu div a img {
         display: none;
     }
 
