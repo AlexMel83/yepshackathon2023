@@ -72,12 +72,12 @@ function drawHeader() {
     let mobLangSelect = `<a class="lang-select" href=${hrefLangUA()}>UA</a>
                     <div class="vertical"></div>
                 <a href=${hrefLangEN()}>EN</a>`;
-    let aboutus = 'Про нас', abutuslink = 'index.html', navlern = 'Навчальний розділ', navlernlink = 'education.html',
-        navorder = 'Замовити проект', navorderlink = 'customers.html', ansvers = 'Відповіді', ansverslink = 'index.html#block-3';
+    let aboutus = 'Про нас', abutuslink = 'https://careerboosters.fromavdiivka.city/index.html', navlern = 'Навчальний розділ', navlernlink = 'https://careerboosters.fromavdiivka.city/education.html',
+        navorder = 'Замовити проект', navorderlink = 'https://careerboosters.fromavdiivka.city/customers.html', ansvers = 'Відповіді', ansverslink = 'https://careerboosters.fromavdiivka.city/index.html#block-3';
 
     if (langEn) {
-        aboutus = 'About us', abutuslink = 'index-en.html', navlern = 'Study section', navlernlink = 'education-en.html',
-            navorder = 'Order a project', navorderlink = 'customers-en.html', ansvers = 'Ansvers', ansverslink = 'index.html-en#block-3';
+        aboutus = 'About us', abutuslink = 'https://careerboosters.fromavdiivka.city/index-en.html', navlern = 'Study section', navlernlink = 'https://careerboosters.fromavdiivka.city/education-en.html',
+            navorder = 'Order a project', navorderlink = 'https://careerboosters.fromavdiivka.city/customers-en.html', ansvers = 'Ansvers', ansverslink = 'https://careerboosters.fromavdiivka.city/index.html-en#block-3';
         navLangSelect = `EN</span>
                     <ul class="dropdown-menu lang">
                     <li><a class="dropdown-item lang" href=${hrefLangUA()}>UA</a></li>
@@ -88,10 +88,15 @@ function drawHeader() {
     }
 
     if (document.title == 'ChatGPT Front-end') {
-        abutuslink = '../../index.html', navlernlink = '../../education.html', navorderlink = '../../customers.html', ansverslink = '../../index.html#block-3';
+        abutuslink = 'https://careerboosters.fromavdiivka.city/index.html', navlernlink = 'https://careerboosters.fromavdiivka.city/education.html', navorderlink = 'https://careerboosters.fromavdiivka.city/customers.html', ansverslink = 'https://careerboosters.fromavdiivka.city/index.html#block-3';
+        if (langEn) {
+            abutuslink = 'https://careerboosters.fromavdiivka.city/index-en.html', navlernlink = 'https://careerboosters.fromavdiivka.city/education-en.html', navorderlink = 'https://careerboosters.fromavdiivka.city/customers-en.html', ansverslink = 'https://careerboosters.fromavdiivka.city/index-en.html#block-3';
+
+        }
+
         header.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary menu">
         <div class="container-fluid header-menu">
-            <a href="../../index.html" title="">
+            <a href="https://careerboosters.fromavdiivka.city/index.html" title="">
                 <div class="header-logo"></div>
             </a>
             <div class="mob-lang-select">
@@ -122,12 +127,12 @@ function drawHeader() {
                 <div class="header-icon-social">
                     <a href="#" class="social-link icon" title="facebook" target="_blank">
                         <svg svg="" class="icon">
-                            <use xlink:href="img/sprite.svg#facebook"></use>
+                            <use xlink:href="../img/sprite.svg#facebook"></use>
                         </svg>
                     </a>
                     <a href="#" class="social-link icon" title="instagram" target="_blank">
                         <svg class="icon">
-                            <use xlink:href="img/sprite.svg#instagram"></use>
+                            <use xlink:href="../img/sprite.svg#instagram"></use>
                         </svg>
                     </a>
                 </div>
@@ -169,12 +174,12 @@ function drawHeader() {
             <div class="header-icon-social">
                 <a href="#" class="social-link icon" title="facebook" target="_blank">
                     <svg svg="" class="icon">
-                        <use xlink:href="img/sprite.svg#facebook"></use>
+                        <use xlink:href="../img/sprite.svg#facebook"></use>
                     </svg>
                 </a>
                 <a href="#" class="social-link icon" title="instagram" target="_blank">
                     <svg class="icon">
-                        <use xlink:href="img/sprite.svg#instagram"></use>
+                        <use xlink:href="../img/sprite.svg#instagram"></use>
                     </svg>
                 </a>
             </div>
@@ -185,13 +190,16 @@ function drawHeader() {
 }
 
 function drawFooter() {
-    let footerdevelop = '© Розроблено студентами Вінницької ІТ-академії 2023', developerlink = 'developer.html';
+    let footerdevelop = '© Розроблено студентами Вінницької ІТ-академії 2023', developerlink = 'https://careerboosters.fromavdiivka.city/developer.html';
 
     if (langEn) {
-        footerdevelop = '© Developed by students of Vinnytsia IT Academy 2023', developerlink = 'developer-en.html';
+        footerdevelop = '© Developed by students of Vinnytsia IT Academy 2023', developerlink = 'https://careerboosters.fromavdiivka.city/developer-en.html';
     }
     if (document.title == 'ChatGPT Front-end') {
-        developerlink = '../../developer.html'
+        developerlink = 'https://careerboosters.fromavdiivka.city/developer.html'
+        if (langEn) {
+            footerdevelop = '© Developed by students of Vinnytsia IT Academy 2023', developerlink = 'https://careerboosters.fromavdiivka.city/developer-en.html';
+        }
     }
     footer.innerHTML = `<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -233,7 +241,7 @@ function drawFooter() {
         </ul>
     </div>
     <svg class="scroll-up">
-        <use xlink:href="img/sprite.svg#scroll-up"></use>
+        <use xlink:href="../img/sprite.svg#scroll-up"></use>
     </svg>`;
 }
 
