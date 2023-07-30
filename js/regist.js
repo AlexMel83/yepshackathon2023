@@ -4,6 +4,8 @@ const validateEmail = (email) => {
     if (email.length > 30) {
         return false;
     }
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
 
     // Добавляем проверку на отсутствие кириллических символов
     const hasCyrillic = /[а-яА-ЯЁё]/.test(email);

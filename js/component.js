@@ -119,6 +119,9 @@ function drawHeader() {
                         </ul>
                     </li>
                 </ul>
+                <div>
+                    <a href="/profile.html"><img src="/img/man_4086650.png" alt="#"></a>
+                </div>
                 <div class="header-icon-social">
                     <a href="#" class="social-link icon" title="facebook" target="_blank">
                         <svg svg="" class="icon">
@@ -165,6 +168,9 @@ function drawHeader() {
                     </ul>
                 </li>
             </ul>
+            <div>
+                <a href="/profile.html"><img src="/img/man_4086650.png" alt="#"></a>
+            </div>
             <div class="header-icon-social">
                 <a href="#" class="social-link icon" title="facebook" target="_blank">
                     <svg svg="" class="icon">

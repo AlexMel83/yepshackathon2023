@@ -82,6 +82,11 @@ h4 {
 }
 
 /* navbar */
+.header-menu div a img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
 
 header.header {
     padding: 0 50px;
@@ -326,6 +331,9 @@ footer .link-body-emphasis {
     }
 
     /* navbar */
+    .header-menu div a img {
+        display: none;
+    }
 
     .navbar-collapse {
         background-color: var(--color-blue-300);
