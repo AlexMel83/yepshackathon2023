@@ -10,6 +10,7 @@ const validateEmail = (email) => {
 const validatePassword = (password) => password.length >= 6 && password.length <= 12;
 
 const saveUserData = () => {
+
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -60,3 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('password').value = userData.password;
     }
 });
+

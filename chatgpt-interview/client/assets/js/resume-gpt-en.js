@@ -7,46 +7,26 @@ const submitButton = document.getElementById('submit-button');
 const regenerateResponseButton = document.getElementById('regenerate-response-button');
 const promptInput = document.getElementById('prompt-input');
 const modelSelect = document.getElementById('model-select');
-const interviewSelect = document.getElementById('interview-select');
-const countSelect = document.getElementById('count-select');
 const responseList = document.getElementById('response-list');
-const fileInput = document.getElementById("whisper-file");
+const fileInput = document.getElementById("text-file");
 
 let prevQuestion = "";
-let countQueries = Number(countSelect.value);
-const startText = "Тисни тут та пройди тестову співбесіду, " +
-    "для початку обери напрям за яким буде проходити співбесіда та кількість питань. І напишіть в чат #start щоб почати";
-const chngeMessage = "Ви змінили налаштування. Якщо готові напишить в чат #start щоб почати";
+// let countQueries = Number(countSelect.value);
+const startText = "In order for ChatGPT to evaluate your resume, upload it as a text in the field or as a file";
+
 addResponse(0, startText);
 
 
 modelSelect.addEventListener("change", function () {
-    if (modelSelect.value === "whisper") {
+    if (modelSelect.value === "textfile") {
         fileInput.style.display = "block";
-        // Disable the input field when Whisper is selected
         promptInput.style.display = 'none';
     } else {
         fileInput.style.display = "none";
         // Enable the input field when Whisper is not selected
         promptInput.style.display = 'block';
     }
-    countQueries = Number(countSelect.value);
-    addResponse(0, chngeMessage);
-
 });
-
-interviewSelect.addEventListener("change", function () {
-    countQueries = Number(countSelect.value);
-
-    addResponse(0, chngeMessage);
-});
-
-countSelect.addEventListener("change", function () {
-    countQueries = Number(countSelect.value);
-
-    addResponse(0, chngeMessage);
-});
-
 
 let isGeneratingResponse = false;
 
@@ -119,59 +99,16 @@ async function regenerateGPTResult() {
     }
 }
 
-async function getWhisperResult() {
-    if (!fileInput.files?.length) {
-        return;
-    }
-    const formData = new FormData();
-    formData.append("audio", fileInput.files[0]);
-    const uniqueId = addResponse(false);
-    const responseElement = document.getElementById(uniqueId);
-    isGeneratingResponse = true;
-    loader(responseElement);
-
-    try {
-        submitButton.classList.add("loading");
-        const response = await fetch("/transcribe", {
-            method: "POST",
-            body: formData
-        });
-        if (!response.ok) {
-            setErrorForResponse(responseElement, `HTTP Error: ${await response.text()}`);
-            return;
-        }
-        const responseText = await response.text();
-        responseElement.innerHTML = `<div>${responseText}</div>`
-    } catch (e) {
-        console.log(e);
-        setErrorForResponse(responseElement, `Error: ${e.message}`);
-    } finally {
-        isGeneratingResponse = false;
-        submitButton.classList.remove("loading");
-        clearInterval(loadInterval);
-    }
-}
-
 // Function to get GPT result
 async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
-    if (modelSelect.value === 'whisper') {
-        await getWhisperResult();
+    if (modelSelect.value === 'textfile') {
         return;
     }
     // Get the prompt input
     let prompt = _promptToRetry ?? promptInput.textContent;
     const origPromt = prompt;
-    if (prompt.trim() === "#start" || !prevQuestion) {
-        prompt = `Ти проводиш співбесіду. Задай одне питання по темі ${interviewSelect.value}.`;
-    } else if (countQueries > 0) {
-        prompt = `Оціни відповідиь '${prompt.trim()}' на питання по 100 бальній системі '${prevQuestion.trim()}'. 
-        Якщо треба доповни відповідь або дай правильну. 
-        Задавай питання після відповіді ${interviewSelect.value}`;
-    } else {
-        addResponse(0, startText);
-        return;
-    }
-    console.log(prompt, countQueries);
+
+    prompt = `Rate the resume '${prompt.trim()}'. Indicate what is missing in the resume, what are its shortcomings and evaluate it on a 100-point scale.`;
 
     // If a response is already being generated or the prompt is empty, return
     if (isGeneratingResponse || !prompt) {
@@ -214,17 +151,11 @@ async function getGPTResult(_promptToRetry, _uniqueIdToRetry) {
         });
         if (!response.ok) {
             let responseText = await response.text();
-            countQueries = countQueries - 1;
-            prevQuestion = responseText.split(":")
-            prevQuestion = prevQuestion[prevQuestion.length - 1]
             setRetryResponse(prompt, uniqueId);
             setErrorForResponse(responseElement, `HTTP Error: ${responseText}`);
             return;
         }
         const responseText = await response.text();
-        countQueries = countQueries - 1;
-        prevQuestion = responseText.split(":")
-        prevQuestion = prevQuestion[prevQuestion.length - 1]
         if (model === 'image') {
             // Show image for `Create image` model
             responseElement.innerHTML = `<img src="${responseText}" class="ai-image" alt="generated image"/>`
