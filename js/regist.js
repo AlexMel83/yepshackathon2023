@@ -7,6 +7,15 @@ const validateEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 };
 
+    // Добавляем проверку на отсутствие кириллических символов
+    const hasCyrillic = /[а-яА-ЯЁё]/.test(email);
+    if (hasCyrillic) {
+        return false;
+    }
+
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
+
 const validatePassword = (password) => password.length >= 6 && password.length <= 12;
 
 const saveUserData = () => {
