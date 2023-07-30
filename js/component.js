@@ -159,7 +159,6 @@ function drawHeader() {
                 <li class="nav-item" id="project-link"><a class="nav-link menu-link" href="${navorderlink}"
                         >${navorder}</a></li>
                 <li class="nav-item" id="contact-link"><a class="nav-link menu-link"
-                        href="index.html#block-3">${ansvers}</a></li>
                         href="${ansverslink}">${ansvers}</a></li>
                 <li class="nav-item dropdown" id="navlang">
                     <span class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
