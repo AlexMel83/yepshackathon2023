@@ -9,10 +9,13 @@
 #block-1 p {
     color: #000;
     text-align: center;
-    font-size: 36px;
+    font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 400;
     line-height: 140%;
-    padding: 78px 20%;
+    padding-top: calc(20px + (78 - 20) * ((100vw - 320px) / (1440 - 320)));
+    padding-bottom: calc(20px + (78 - 20) * ((100vw - 320px) / (1440 - 320)));
+    padding-left: calc(3% + (20 - 3) * ((100vw - 320px) / (1440 - 320)));
+    padding-right: calc(3% + (20 - 3) * ((100vw - 320px) / (1440 - 320)));
 }
 
 #block-1 .left-img {
@@ -44,24 +47,19 @@
 #block-2 .btn-register,
 #block-1 a .btn-ai {
     display: block;
-    width: 312px;
-    height: 82px;
+    width: calc(200px + (312 - 200) * ((100vw - 320px) / (1440 - 320)));
+    height: calc(65px + (82 - 65) * ((100vw - 320px) / (1440 - 320)));
     flex-shrink: 0;
     border-radius: 16px;
     background: #3008A1;
     margin: 30px auto;
     color: white;
-    font-size: 32px;
+    font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 400;
     line-height: 1;
 }
 
 .btn__regist {
-    color: white;
-}
-
-.btn-register {
-    margin-left: 580px;
     color: white;
 }
 
@@ -84,7 +82,7 @@
 
 #block-2 .card-header h4 {
     color: #3008A1;
-    font-size: 42px;
+    font-size: calc(19px + (42 - 19) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 700;
     line-height: 120%;
 }
@@ -94,13 +92,13 @@
     justify-content: center;
     align-items: center;
     color: #000;
-    font-size: 24px;
+    font-size: calc(17px + (24 - 17) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 400;
 }
 
 #block-2 .icon-card {
-    width: 176px;
-    height: 178.206px;
+    width: calc(90px + (176 - 90) * ((100vw - 320px) / (1440 - 320)));
+    height: calc(90px + (176.206 - 90) * ((100vw - 320px) / (1440 - 320)));
     transform: rotate(8.6deg);
     flex-shrink: 0;
 }
@@ -126,7 +124,7 @@
 
 #block-3 .accordion-button {
     color: #3008A1;
-    font-size: 40px;
+    font-size: calc(16px + (40 - 16) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 400;
     background-color: #D9D9D9;
     border-radius: 10px;
@@ -167,7 +165,7 @@ footer .border-top {
 }
 
 .accordion-body {
-    font-size: 24px;
+    font-size: calc(17px + (24 - 17) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .text-title_header {
