@@ -303,8 +303,8 @@ footer .link-body-emphasis {
 
 @media (max-width: 992px) {
     h2 {
-        font-size: 64px;
-        line-height: 70px
+        font-size: calc(32px + (64 - 32) * ((100vw - 320px) / (1440 - 320)));
+        line-height: calc(40px + (70 - 40) * ((100vw - 320px) / (1440 - 320)));
     }
 
     h3,
@@ -313,8 +313,8 @@ footer .link-body-emphasis {
     }
 
     h3 {
-        font-size: 40px;
-        line-height: 50px
+        font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1440 - 320)));
+        line-height: calc(23px + (50 - 23) * ((100vw - 320px) / (1440 - 320)));
     }
 
     h4 {
